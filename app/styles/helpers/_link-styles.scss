@@ -3,9 +3,9 @@
   border: 0;
   transition: fill $ease-main, color $ease-main, opacity $ease-main, border-color $ease-main;
   fill: $color-main;
+  text-transform: uppercase;
 
   &__text {
-    border-bottom: 1px solid;
     border-color: inherit;
   }
 
@@ -17,6 +17,22 @@
   border-color: transparent;
 }
 
-@mixin link-dashed {
-  border-bottom-style: dashed;
+@mixin link-white {
+  color: $color-basic;
+  fill: $color-basic;
+}
+
+@mixin link-yellow {
+  color: $color-yellow;
+  fill: $color-yellow;
+}
+
+@mixin link-gray {
+  color: $color-gray;
+  fill: $color-gray;
+}
+
+@mixin link-gray2 {
+  color: $color-gray-3;
+  fill: $color-gray-3;
 }

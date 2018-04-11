@@ -12,11 +12,11 @@
 @import '../pages/**/*';
 
 .container {
-  width: $container-width;
+  max-width: $container-width;
   padding-left: $container-padding;
   padding-right: $container-padding;
   margin: 0 auto;
-  max-width: 100%;
+  width: 100%;
   box-sizing: border-box;
 }
 

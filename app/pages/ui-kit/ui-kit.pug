@@ -1,7 +1,7 @@
 extends ../../layouts/default
 
 block head
-  - var pageTitle = 'Versta Project Template'
+  - var pageTitle = 'АРКО - UI KIT'
 
 block content
   +ui-kit
@@ -11,18 +11,18 @@ block content
 
     +ui-kit-head
       +e.logo Логотип
-      +e.name Название проекта
+      +e.name АРКО
 
     //- Сетка
     +ui-section._grid
       +ui-section-head
         h2 Сетка
         p Отступы слева и справа от экрана: 20px ($container-padding)
-        p Ширина контейнера: 960px ($container-width)
+        p Ширина контейнера: 1004px ($container-width)
         p Ширина контейнера сетки: 100% ($grid-container-width)
         p Колонок: 12 ($grid-cols)
-        p Горизонтальное расстояние между колонками: 20px ($grid-gap)
-        p Вертикальное расстояние между колонками: 20px ($grid-gap-vertical)
+        p Горизонтальное расстояние между колонками: 48px ($grid-gap)
+        p Вертикальное расстояние между колонками: 30px ($grid-gap-vertical)
         p Переменные: styles/helpers/_variables.scss
         p Блок: blocks/grid/
 
@@ -64,11 +64,20 @@ block content
         p Переменные находятся в файле styles/helpers/_variables.scss
       +ui-section-content()
         +ui-elements-list()
-          +ui-color('black', '$color-basic', true)
-          +ui-color('#2252d8', '$color-main', true)
-          +ui-color('#777', '$color-placeholder', true)
-          +ui-color('black', '$color-input', true)
-          +ui-color('#ccc', '$color-border')
+          +ui-color('black', '$color-background')
+          +ui-color('white', '$color-basic', true)
+          +ui-color('#eab90d', '$color-main', true)
+          +ui-color('#3d3c3c', '$color-border')
+          +ui-color('#191818', '$color-dark-gray')
+          +ui-color('#878785', '$color-gray')
+          +ui-color('#818285', '$color-gray-2')
+          +ui-color('#e0b10c', '$color-yellow', true)
+          +ui-color('#ffba00', '$color-yellow2', true)
+          +ui-color('#353535', '$color-middle-gray')
+          +ui-color('#ededed', '$color-light-gray', true)
+          +ui-color('#cac9c9', '$color-light-gray-2', true)
+          +ui-color('#a7a7a7', '$color-light-gray-3')
+          +ui-color('#666', '$color-gray-3')
 
     //- Цвета
     +ui-section
@@ -84,12 +93,11 @@ block content
     +ui-section
       +ui-section-head
         h2 Шрифты и контентная зона
-        p Основной шрифт: Arial ($font-main), font-weight: 400, 600
-        p Дополнительный шрифт: Times New Roman ($font-second), font-weight: 400, 600
+        p Основной шрифт: 'PT Sans' ($font-main), font-weight: 400
         p Переменные находятся в файле styles/helpers/_variables.scss
         p Шрифты подключены в styles/helpers/_fonts.scss
         p Контентная зона: blocks/content-zone
-        p Стили всех текстов лежат в файле styles/helpers/_text-styles.scss и должны импортироваться из него через директиву @extend и задаваться через "временные" классы %className
+        p Стили всех текстов лежат в файле styles/helpers/_text-styles.scss
       +ui-section-content()
         +ui-description .content-zone
         +ui-special()
@@ -192,7 +200,7 @@ block content
               li Элемент списка
           li Элемент списка
 
-    //- Табы
+    //- Элементы форм
     +ui-section
       +ui-section-head
         h2 Элементы форм
@@ -286,8 +294,14 @@ block content
       +ui-section-content()
         +ui-description .link
         +link()(href="#") Обычная ссылка
-        +ui-description .link._dashed
-        +link()(href="#")._dashed Пунктирная ссылка
+        +ui-description .link._white
+        +link()(href="#")._white Белая ссылка
+        +ui-description .link._yellow
+        +link()(href="#")._yellow Еще одна желтая ссылка
+        +ui-description .link._gray
+        +link()(href="#")._gray Серая ссылка
+        +ui-description .link._gray2
+        +link()(href="#")._gray2 Еще одна серая ссылка
         +ui-description .link._icon
         +link-icon('refresh')(href="#") Ссылка с иконкой
         +ui-description .link.is-disabled

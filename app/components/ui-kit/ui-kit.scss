@@ -1,6 +1,6 @@
-$ui-kit-color-gray: #ccc;
-$ui-kit-color-text: #222;
-$ui-kit-color-darkbg: #111;
+$ui-kit-color-gray: $color-gray;
+$ui-kit-color-text: white;
+$ui-kit-color-darkbg: black;
 
 .ui-kit {
   display: block;
@@ -183,7 +183,7 @@ $ui-kit-color-darkbg: #111;
     vertical-align: top;
     box-shadow: inset 0 0 0 1px rgba(black, .1);
 
-    &_bg_dark { color: white; }
+    &_bg_dark { color: $color-background; }
 
     &_gradient {
       &_main { @include gradient-main; }

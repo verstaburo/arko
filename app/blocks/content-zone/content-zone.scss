@@ -109,5 +109,5 @@
 
   ol { @include ollist; }
 
-  a { @include link; }
+  a { @include link; text-transform: none; }
 }

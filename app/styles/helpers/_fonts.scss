@@ -14,6 +14,64 @@
 }
 */
 
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/pt_sans-web-regular.eot');
+  src:
+    url('../fonts/pt_sans-web-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/pt_sans-web-regular.woff2') format('woff2'),
+    url('../fonts/pt_sans-web-regular.woff') format('woff'),
+    url('../fonts/pt_sans-web-regular.otf')  format('opentype'),
+    url('../fonts/pt_sans-web-regular.ttf')  format('truetype'),
+    url('../fonts/pt_sans-web-regular.svg#pt_sans-web-regular') format('svg');
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/pt_sans-web-italic.eot');
+  src:
+    url('../fonts/pt_sans-web-italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/pt_sans-web-italic.woff2') format('woff2'),
+    url('../fonts/pt_sans-web-italic.woff') format('woff'),
+    url('../fonts/pt_sans-web-italic.otf')  format('opentype'),
+    url('../fonts/pt_sans-web-italic.ttf')  format('truetype'),
+    url('../fonts/pt_sans-web-italic.svg#pt_sans-web-italic') format('svg');
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/pt_sans-web-bold.eot');
+  src:
+    url('../fonts/pt_sans-web-bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/pt_sans-web-bold.woff2') format('woff2'),
+    url('../fonts/pt_sans-web-bold.woff') format('woff'),
+    url('../fonts/pt_sans-web-bold.otf')  format('opentype'),
+    url('../fonts/pt_sans-web-bold.ttf')  format('truetype'),
+    url('../fonts/pt_sans-web-bold.svg#pt_sans-web-bold') format('svg');
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/pt_sans-web-bolditalic.eot');
+  src:
+    url('../fonts/pt_sans-web-bolditalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/pt_sans-web-bolditalic.woff2') format('woff2'),
+    url('../fonts/pt_sans-web-bolditalic.woff') format('woff'),
+    url('../fonts/pt_sans-web-bolditalic.otf')  format('opentype'),
+    url('../fonts/pt_sans-web-bolditalic.ttf')  format('truetype'),
+    url('../fonts/pt_sans-web-bolditalic.svg#pt_sans-web-bolditalic') format('svg');
+}
+
+
+
 /* Соответствие письменного названия жирности числовому значению
 100 — Thin
 200 — Extra Light, Ultra Light

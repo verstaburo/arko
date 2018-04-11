@@ -3,12 +3,12 @@
 // ##########
 // Базовые настройки сетки сайта
 // ##########
-$container-width: 960px; // Максимальная ширина контейнера контента
+$container-width: 1004px; // Максимальная ширина контейнера контента
 $container-padding: 20px; // Отступы слева и справа у контейнера
 $grid-container-width: 100%; // Ширина контейнера сетки
 $grid-cols: 12; // Количество колонок в сетке
-$grid-gap: 20px; // Расстояние между колонками
-$grid-gap-vertical: 20px; // Расстояние между строками в сетке
+$grid-gap: 48px; // Расстояние между колонками
+$grid-gap-vertical: 30px; // Расстояние между строками в сетке
 $grid-col-width: $grid-container-width/$grid-cols; // Ширина одной колонки
 $breakpoints: (
   'xl': 1920px,
@@ -21,11 +21,22 @@ $breakpoints: (
 // ##########
 // Цвета
 // ##########
-$color-basic: black; // Основной цвет текста (применяется к body)
-$color-placeholder: #777; // Основной цвет для placeholder
-$color-input: black; // Основной цвет input, select и textarea
-$color-main: #2252d8; // Основной фирменный цвет
-$color-border: #ccc; // Основной цвет границ таблиц, секций
+$color-basic: white; // Основной цвет текста (применяется к body)
+$color-background: black; // Основной цвет фона
+$color-placeholder: $color-basic; // Основной цвет для placeholder
+$color-input: $color-basic; // Основной цвет input, select и textarea
+$color-main: #eab90d; // Основной фирменный цвет
+$color-border: #3d3c3c; // Основной цвет границ таблиц, секций
+$color-dark-gray: #191818; //news
+$color-gray: #878785;
+$color-gray-2: #818285;
+$color-yellow: #e0b10c;
+$color-yellow-2: #ffba00;
+$color-middle-gray: #353535; //search
+$color-light-gray: #ededed;
+$color-ligh-gray-2: #cac9c9;
+$color-ligh-gray-3: #a7a7a7;
+$color-gray-3: #666666;
 
 // ##########
 // Transitions
@@ -35,5 +46,4 @@ $ease-main: .3s ease;
 // ##########
 // Шрифты
 // ##########
-$font-main: Arial, sans-serif; // Основной шрифт сайта
-$font-second: Times New Roman, sans-serif; // Дополнительный шрифт
+$font-main: 'PT Sans', 'Arial', sans-serif; // Основной шрифт сайта

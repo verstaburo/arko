@@ -2,12 +2,6 @@
   $b: &;
   @include link;
 
-  &__text {
-    #{$b}_dashed & {
-      @include link-dashed;
-    }
-  }
-
   &_icon {
     position: relative;
     padding-left: 25px;
@@ -28,5 +22,21 @@
     pointer-events: none;
     fill: $color-border;
     @include link-disabled;
+  }
+
+  &_white {
+    @include link-white;
+  }
+
+  &_yellow {
+    @include link-yellow;
+  }
+
+  &_gray {
+    @include link-gray;
+  }
+
+  &_gray2 {
+    @include link-gray2;
   }
 }
