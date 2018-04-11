@@ -1,10 +1,10 @@
-extends ../../layouts/default
+extends ../../layouts/noaside
 
 block head
-  - var pageTitle = 'Versta Project Template'
+  - var pageTitle = 'АРКО - Карта сайта'
 
 block content
-  +b.sitemap
+  +e.content.sitemap
     .container
       +e.list
         +link(href="ui-kit.html") UI-kit (ui-kit.html)

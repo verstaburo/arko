@@ -1,2 +1,33 @@
 .search {
+  position: relative;
+  box-sizing: border-box;
+  width: 134px;
+
+  &__input {
+    display: inline-block;
+    height: 21px;
+    padding: 3px 31px 5px 10px;
+    border: none;
+    background-color: $color-middle-gray;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  &__button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    height: 100%;
+    width: 21px;
+    text-align: right;
+    vertical-align: middle;
+    padding: 3px 0;
+    background-color: $color-background;
+  }
+
+  &__image {
+    width: 16px;
+    height: 15px;
+  }
 }

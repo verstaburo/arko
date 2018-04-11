@@ -1,0 +1,46 @@
+.informer {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-top: 43.62%;
+  overflow: hidden;
+  text-decoration: none;
+  color: $color-basic;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &__image {
+    @include fill-img;
+    transition: all $ease-main;
+    transform: scale(1);
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    @include heading-3;
+    text-transform: uppercase;
+    line-height: 1.1;
+    z-index: 2;
+    box-sizing: border-box;
+    padding: 8px;
+
+    @include screen('tablet-small') {
+      @include heading-1;
+      line-height: 1.1;
+      padding: 12px 14px;
+    }
+  }
+
+  &:hover {
+
+    .informer__image {
+      transform: scale(1.1);
+    }
+  }
+}

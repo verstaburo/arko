@@ -1,0 +1,67 @@
+.page {
+  width: 100%;
+  padding: 20px 0 50px;
+  box-sizing: border-box;
+
+  @include screen('tablet') {
+    padding-bottom: 107px;
+  }
+
+  .container {
+    position: relative;
+    box-sizing: border-box;
+
+    @include screen('tablet') {
+      padding-right: 224px;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    box-sizing: border-box;
+
+    @include screen('tablet') {
+      width: 100%;
+      padding-right: 20px;
+    }
+  }
+
+  &__aside {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+
+    @include screen('tablet') {
+      position: absolute;
+      margin-top: 0;
+      right: 20px;
+      top: 0;
+      width: 204px;
+      height: 100%;
+    }
+
+    .scroll-wrapper {
+      max-height: 200px;
+
+      @include screen('tablet-small') {
+        max-height: 400px;
+      }
+
+      @include screen('tablet') {
+        max-height: 100%;
+      }
+    }
+  }
+
+  &_noaside {
+
+    .container {
+      padding-right: 0;
+    }
+
+    .page__content {
+      padding-right: 0;
+    }
+  }
+}

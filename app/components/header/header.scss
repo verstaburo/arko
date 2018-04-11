@@ -1,2 +1,39 @@
 .header {
+
+  &__col {
+    font-size: 0;
+
+    &_right {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+      box-sizing: border-box;
+      margin-top: -4px;
+
+      @include screen('phone-wide') {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    box-sizing: border-box;
+    padding: 21px 0 11px;
+  }
+
+  &__navigation {
+    border-top: 3px solid $color-border;
+    box-sizing: border-box;
+    padding-bottom: 9px;
+    letter-spacing: -.02em;
+  }
+
+  .search {
+    margin-top: 9px;
+  }
 }

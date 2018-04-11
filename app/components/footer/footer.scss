@@ -1,0 +1,26 @@
+.footer {
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid $color-gray-2;
+  padding: 14px 0 42px;
+  margin-top: auto;
+
+  @include screen('tablet-wide') {
+    padding-bottom: 121px;
+  }
+
+  .container {
+    text-align: right;
+  }
+
+  &__phone {
+    @include heading-3;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: .075em;
+  }
+
+  &_noborder {
+    border-top-width: 0;
+  }
+}

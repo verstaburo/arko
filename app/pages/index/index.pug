@@ -1,7 +1,9 @@
 extends ../../layouts/default
 
 block head
-  - var pageTitle = 'Versta Project Template'
+  - var pageTitle = 'АРКО - ПРОФЕССИОНАЛЬНЫЕ КИНООПЕРАТОРЫ РОССИИ'
 
 block content
-  +b.index
+  +e.content
+    +informer('assets/images/wall1.jpg', '2 АПРЕЛЯ 2018. ПРЕЗЕНТАЦИЯ АРКО')(href="article.html")
+    +informer('assets/images/wall2.jpg', '2 АПРЕЛЯ 2018. ПРЕЗЕНТАЦИЯ АРКО')(href="article.html")

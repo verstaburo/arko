@@ -1,0 +1,5 @@
+mixin short-news(time, tag)
+  +b(tag || 'a').short-news&attributes(attributes)
+    +e.TIME.time!=time
+    +e.text
+      block

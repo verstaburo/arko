@@ -1,3 +1,23 @@
 mixin header()
   +b.header&attributes(attributes)
-    block
+    .container
+      +e.top
+        +e.col_left
+          +logo(href="index.html")
+        +e.col_right
+          +link-list
+            +e.LI.item
+              +link._ls(href="#") ВХОД
+            +e.LI.item
+              +link._ls._gray(href="#") РЕГИСТРАЦИЯ
+          +search
+      +e.NAV.navigation
+        +link-list._big-margin
+          +e.LI.item
+              +link._white(href="news.html") НОВОСТИ И СОБЫТИЯ
+          +e.LI.item
+              +link._white(href="catalog.html") УЧАСТНИКИ
+          +e.LI.item
+              +link._white(href="#") ФОРУМ
+          +e.LI.item
+              +link._white(href="about.html") ОБ АРКО

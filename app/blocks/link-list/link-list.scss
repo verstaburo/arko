@@ -1,0 +1,32 @@
+.link-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: auto;
+
+  &__item {
+    margin-top: 9px;
+
+    &:not(:last-child) {
+      margin-right: 9px;
+    }
+
+    .link {
+      @include text-big;
+    }
+  }
+
+  &_big-margin {
+
+    .link-list {
+
+      &__item {
+        &:not(:last-child) {
+          margin-right: 28px;
+        }
+      }
+    }
+  }
+}

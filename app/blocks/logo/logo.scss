@@ -1,2 +1,29 @@
 .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  color: $color-basic;
+
+  &__image {
+    margin-right: 10px;
+    width: 130px;
+    height: 55px;
+
+    @include screen('phone-wide') {
+      width: 167px;
+      height: 71px;
+    }
+  }
+
+  &__text {
+    font-size: 0;
+
+    @include screen('tablet-wide') {
+      @include text-big;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+  }
 }
