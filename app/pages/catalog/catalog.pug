@@ -4,3 +4,25 @@ block head
   - var pageTitle = 'АРКО - Участники'
 
 block content
+  +e.content_pad40.catalog__
+    +filter.__filter
+    +grid.catalog__content
+      +col({xs: 12, lg: 6, xl: 4})
+        +person('assets/images/avatar-1.jpg', 'Роджер Дикинс', 'Химки')(href="person.html")
+      +col({xs: 12, lg: 6, xl: 4})
+        +person('assets/images/avatar-2.jpg', 'Эммануэль Любецки', 'Лос-Анджелес')(href="person.html")
+      +col({xs: 12, lg: 6, xl: 4})
+        +person('assets/images/avatar-3.jpg', 'Влад Опельянц', 'Москва')(href="person.html")
+      +col({xs: 12, lg: 6, xl: 4})
+        +person('assets/images/avatar-4.jpg', 'Игорь Гринякин', 'Москва')(href="person.html")
+      +col({xs: 12, lg: 6, xl: 4})
+        +person('assets/images/avatar-5.jpg', 'Евгений Привин', 'Москва')(href="person.html")
+      +col({xs: 12, lg: 6, xl: 4})
+        +person('assets/images/avatar-6.jpg', 'Владимир Башта', 'Москва')(href="person.html")
+      +col({xs: 12, lg: 6, xl: 4})
+        +person('assets/images/avatar-7.jpg', 'Александр Симонов', 'Санкт-Петербург')(href="person.html")
+      +col({xs: 12, lg: 6, xl: 4})
+        +person('assets/images/avatar-8.jpg', 'Пётр Духовской', 'Москва')(href="person.html")
+      +col({xs: 12, lg: 6, xl: 4})
+        +person('assets/images/avatar-9.jpg', 'Пётр Духовской', 'Москва')(href="person.html")
+    +filter-pagination.__pagination

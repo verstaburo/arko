@@ -1,2 +1,25 @@
 .catalog {
+  @include screen('tablet') {
+    padding-left: 5px;
+  }
+
+  &__filter {
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    padding-left: 6px;
+
+    @include screen('tablet') {
+      top: -11px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__content {
+    margin-bottom: 10px;
+  }
+
+  &__pagination {
+    padding-left: 6px;
+  }
 }

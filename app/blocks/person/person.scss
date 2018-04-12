@@ -1,0 +1,28 @@
+.person {
+  width: 100%;
+  display: block;
+  transition: all $ease-main;
+  text-decoration: none;
+
+  &__describe, &__title, &__text {
+    display: block;
+    width: 100%;
+    @include text-big;
+    color: $color-ligh-gray-3;
+  }
+
+  &__describe {
+    box-sizing: border-box;
+    padding: 6px 9px;
+  }
+
+  &__title {
+    @include heading-3;
+    color: $color-ligh-gray-2;
+    margin-bottom: 2px;
+  }
+
+  &:hover {
+    opacity: .6;
+  }
+}

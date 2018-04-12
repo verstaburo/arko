@@ -18,6 +18,18 @@
     }
   }
 
+  &_mid-margin {
+
+    .link-list {
+
+      &__item {
+        &:not(:last-child) {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+
   &_big-margin {
 
     .link-list {

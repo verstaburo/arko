@@ -1,0 +1,29 @@
+.filter {
+
+  .link-list__item.active .link {
+    color: $color-yellow;
+    fill: $color-yellow;
+
+    @include screen('tablet', max) {
+      @include text;
+    }
+  }
+
+  .link-list__item {
+    letter-spacing: .03em;
+
+    &:not(:last-child) {
+      margin-right: 9px;
+
+      @include screen('tablet') {
+        margin-right: 15px;
+      }
+    }
+
+    .link {
+      @include screen('tablet', max) {
+        @include text;
+      }
+    }
+  }
+}

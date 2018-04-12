@@ -1,0 +1,6 @@
+mixin person(img, title, text, tag)
+  +b(tag || 'a').person&attributes(attributes)
+    +avatar(img)
+    +e.describe
+      +e.title!= title
+      +e.text!= text

@@ -1,6 +1,6 @@
 $default-breakpoit-name: xl;
 $default-breakpoint-value: map_has_key($breakpoints, $default-breakpoit-name);
-$new-breakpoints: map_remove($breakpoints, $default-breakpoit-name);
+$new-breakpoints: map_remove($breakgrid, $default-breakpoit-name);
 
 .grid {
   font-size: 0;
@@ -30,7 +30,7 @@ $new-breakpoints: map_remove($breakpoints, $default-breakpoit-name);
 
     @each $key, $val in $new-breakpoints {
       @for $i from 1 through 15 {
-        @include screen($key) {
+        @media screen and (max-width: #{$val}) {
           &_#{$key}_#{$i} {
             width: $i * $grid-col-width;
           }
