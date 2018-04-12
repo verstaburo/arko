@@ -11,7 +11,7 @@
     "make": "node make"
   },
   "dependencies": {
-    "@fancyapps/fancybox": "^3.1.25",
+    "@fancyapps/fancybox": "^3.3.5",
     "air-datepicker": "^2.2.3",
     "autoprefixer": "^6.7.7",
     "babel-core": "^6.24.0",

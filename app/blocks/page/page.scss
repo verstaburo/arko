@@ -12,7 +12,7 @@
     box-sizing: border-box;
 
     @include screen('tablet') {
-      padding-right: 224px;
+      padding-right: 204px + $container-padding;
     }
   }
 
@@ -41,7 +41,7 @@
     @include screen('tablet') {
       position: absolute;
       margin-top: 0;
-      right: 20px;
+      right: $container-padding;
       top: 0;
       width: 204px;
       height: 100%;
@@ -63,7 +63,7 @@
   &_noaside {
 
     .container {
-      padding-right: 0;
+      padding-right: $container-padding;
     }
 
     .page__content {

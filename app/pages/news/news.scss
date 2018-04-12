@@ -1,2 +1,6 @@
-.news {
+.news-list {
+
+  @include screen('tablet') {
+    padding-top: 14px;
+  }
 }

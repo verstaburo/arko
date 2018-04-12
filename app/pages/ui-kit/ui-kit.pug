@@ -22,7 +22,10 @@ block content
           p Ширина контейнера сетки: 100% ($grid-container-width)
           p Колонок: 12 ($grid-cols)
           p Горизонтальное расстояние между колонками: 48px ($grid-gap)
-          p Вертикальное расстояние между колонками: 30px ($grid-gap-vertical)
+          p Вертикальное расстояние между колонками: 24px ($grid-gap-vertical)
+          p Сетка с маленькими отступами .grid.grid_smal
+          p Горизонтальное расстояние между колонками: 20px ($grid-gap-small)
+          p Вертикальное расстояние между колонками: 20px ($grid-gap-small-vertical)
           p Переменные: styles/helpers/_variables.scss
           p Блок: blocks/grid/
 
@@ -37,8 +40,27 @@ block content
                 br
                 span При следующей записи - блок будет занимать 6 колонок на всех разрешениях, а на самом маленьком #[i (xs)] 12
               p +col({ xl: 6, xs: 12 })
-
-          +grid
+          +ui-description .grid
+          +grid(style="margin-bottom: 20px")
+            +col(1)
+            +col(1)
+            +col(1)
+            +col(1)
+            +col(1)
+            +col(1)
+            +col(1)
+            +col(1)
+            +col(1)
+            +col(1)
+            +col(1)
+            +col(1)
+            +col(4)
+            +col(4)
+            +col(4)
+            +col(6)
+            +col(6)
+          +ui-description .grid.grid_small
+          +grid.grid_small
             +col(1)
             +col(1)
             +col(1)

@@ -9,6 +9,8 @@ $grid-container-width: 100%; // Ширина контейнера сетки
 $grid-cols: 12; // Количество колонок в сетке
 $grid-gap: 48px; // Расстояние между колонками
 $grid-gap-vertical: 24px; // Расстояние между строками в сетке
+$grid-gap-small: 20px; // Расстояние между колонками
+$grid-gap-small-vertical: 20px; // Расстояние между строками в сетке
 $grid-col-width: $grid-container-width/$grid-cols; // Ширина одной колонки
 $breakgrid: (
   'lg': 1023px,
@@ -36,6 +38,8 @@ $color-light-gray: #ededed;
 $color-ligh-gray-2: #cac9c9;
 $color-ligh-gray-3: #a7a7a7;
 $color-gray-3: #666666;
+$color-cream: #fefefe;
+$color-blue: #005e81;
 
 // ##########
 // Transitions

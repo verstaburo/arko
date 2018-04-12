@@ -1,6 +1,27 @@
-extends ../../layouts/noaside
+extends ../../layouts/noaside-nofooter
 
 block head
   - var pageTitle = 'АРКО - Новости'
 
 block content
+  +e.content.news-list__
+    +grid.grid_small
+      +col({xs: 12, md: 6, xl: 4})
+        +news('assets/images/news1.jpg')(href="article.html") Канны-2018: <br> &laquo;Лето&raquo; Кирилла Серебренникова в&nbsp;конкурсной программе фестиваля
+      +col({xs: 12, md: 6, xl: 4})
+        +news('assets/images/news2.jpg')(href="article.html") Комикс &laquo;Инъекция&raquo; <br> Уоррен Эллиса может стать сериалом
+      +col({xs: 12, md: 6, xl: 4})
+        +news('assets/images/news3.jpg')(href="article.html") Саша Барон Коэн снимется в мини-сериале Netflix &laquo;Шпион&raquo;
+      +col({xs: 12, md: 6, xl: 4})
+        +news('assets/images/news4.jpg')(href="article.html") Презентация &laquo;АРКО&raquo; <br> Репортаж и&nbsp;интервью с&nbsp;участниками
+      +col({xs: 12, md: 6, xl: 4})
+        +news('assets/images/news4.jpg')(href="article.html") Презентация &laquo;АРКО&raquo; <br> Репортаж и&nbsp;интервью с&nbsp;участниками
+      +col({xs: 12, md: 6, xl: 4})
+        +news('assets/images/news5.jpg')(href="article.html") Мегаломан, художник, создатель миров: Отрывок из&nbsp;книги о&nbsp;Стэнли Кубрике
+      +col({xs: 12, md: 6, xl: 4})
+        +news('assets/images/news5.jpg')(href="article.html") Мегаломан, художник, создатель миров: Отрывок из&nbsp;книги о&nbsp;Стэнли Кубрике
+      +col({xs: 12, md: 6, xl: 4})
+        +news('assets/images/news4.jpg')(href="article.html") Презентация &laquo;АРКО&raquo; <br> Репортаж и&nbsp;интервью с&nbsp;участниками
+      +col({xs: 12, md: 6, xl: 4})
+        +news('assets/images/news4.jpg')(href="article.html") Презентация &laquo;АРКО&raquo; <br> Репортаж и&nbsp;интервью с&nbsp;участниками
+    +filter-pagination.__pagination

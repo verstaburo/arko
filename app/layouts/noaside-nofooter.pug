@@ -1,0 +1,13 @@
+include _externalIncludes
+include _internalIncludes
+
+doctype html
+html(lang='ru')
+  include head
+  body
+    +header
+    +page._noaside
+      .container
+        block content
+    script(src='assets/scripts/app.min.js')
+    script(src='assets/scripts/main.js')
