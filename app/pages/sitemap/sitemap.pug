@@ -4,8 +4,11 @@ block head
   - var pageTitle = 'АРКО - Карта сайта'
 
 block content
-  +e.content.sitemap
+  +e.content.sitemap__
     .container
       +e.list
         +link(href="ui-kit.html") UI-kit (ui-kit.html)
         +link(href="index.html") Главная (index.html)
+        +link(href="catalog.html") Участники (catalog.html)
+        +link(href="news.html") Новости (news.html)
+        +link(href="article.html") Статья (article.html)

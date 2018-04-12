@@ -1,0 +1,25 @@
+.article {
+  margin-bottom: 50px;
+
+  @include screen('tablet') {
+    margin-bottom: 0;
+  }
+
+  &__media {
+    width: 100%;
+  }
+
+  &__title {
+    @include heading-1;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    display: block;
+  }
+
+  &__time {
+    @include heading-3;
+    color: $color-gray;
+  }
+}
