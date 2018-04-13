@@ -96,6 +96,9 @@
                                 <p>Колонок: 12 ($grid-cols)</p>
                                 <p>Горизонтальное расстояние между колонками: 48px ($grid-gap)</p>
                                 <p>Вертикальное расстояние между колонками: 24px ($grid-gap-vertical)</p>
+                                <p>Сетка со средними отступами .grid.grid_mid</p>
+                                <p>Горизонтальное расстояние между колонками: 30px ($grid-gap-mid)</p>
+                                <p>Вертикальное расстояние между колонками: 30px ($grid-gap-mid-vertical)</p>
                                 <p>Сетка с маленькими отступами .grid.grid_smal</p>
                                 <p>Горизонтальное расстояние между колонками: 20px ($grid-gap-small)</p>
                                 <p>Вертикальное расстояние между колонками: 20px ($grid-gap-small-vertical)</p>
@@ -140,7 +143,27 @@
                                     <div class="grid__col grid__col_xl_6"></div>
                                 </div>
                                 <p class="ui-kit__description">.grid.grid_small</p>
-                                <div class="grid grid_small">
+                                <div class="grid grid_small" style="margin-bottom: 20px;">
+                                    <div class="grid__col grid__col_xl_1"></div>
+                                    <div class="grid__col grid__col_xl_1"></div>
+                                    <div class="grid__col grid__col_xl_1"></div>
+                                    <div class="grid__col grid__col_xl_1"></div>
+                                    <div class="grid__col grid__col_xl_1"></div>
+                                    <div class="grid__col grid__col_xl_1"></div>
+                                    <div class="grid__col grid__col_xl_1"></div>
+                                    <div class="grid__col grid__col_xl_1"></div>
+                                    <div class="grid__col grid__col_xl_1"></div>
+                                    <div class="grid__col grid__col_xl_1"></div>
+                                    <div class="grid__col grid__col_xl_1"></div>
+                                    <div class="grid__col grid__col_xl_1"></div>
+                                    <div class="grid__col grid__col_xl_4"></div>
+                                    <div class="grid__col grid__col_xl_4"></div>
+                                    <div class="grid__col grid__col_xl_4"></div>
+                                    <div class="grid__col grid__col_xl_6"></div>
+                                    <div class="grid__col grid__col_xl_6"></div>
+                                </div>
+                                <p class="ui-kit__description">.grid.grid_mid</p>
+                                <div class="grid grid_mid">
                                     <div class="grid__col grid__col_xl_1"></div>
                                     <div class="grid__col grid__col_xl_1"></div>
                                     <div class="grid__col grid__col_xl_1"></div>
@@ -200,6 +223,10 @@
                                         <br>$color-light-gray-3</div>
                                     <div class="ui-kit__color" style="background-color: #666">#666
                                         <br>$color-gray-3</div>
+                                    <div class="ui-kit__color ui-kit__color_bg_dark" style="background-color: #fefefe">#fefefe
+                                        <br>$color-cream</div>
+                                    <div class="ui-kit__color" style="background-color: #005e81">#005e81
+                                        <br>$color-blue</div>
                                 </div>
                             </div>
                         </div>
@@ -600,8 +627,34 @@
                                     </a>
                                 </li>
                             </ul>
+                            <p class="ui-kit__description">.link-list._mid-margin</p>
+                            <ul class="link-list link-list_mid-margin">
+                                <li class="link-list__item">
+                                    <a class="link link_white" href="news.html">
+                                        <span class="link__text">НОВОСТИ И СОБЫТИЯ</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_white" href="catalog.html">
+                                        <span class="link__text">УЧАСТНИКИ</span>
+                                    </a>
+                                </li>
+                            </ul>
                             <p class="ui-kit__description">.link-list._big-margin</p>
                             <ul class="link-list link-list_big-margin">
+                                <li class="link-list__item">
+                                    <a class="link link_white" href="news.html">
+                                        <span class="link__text">НОВОСТИ И СОБЫТИЯ</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_white" href="catalog.html">
+                                        <span class="link__text">УЧАСТНИКИ</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="ui-kit__description">.link-list._vertical</p>
+                            <ul class="link-list link-list_vertical">
                                 <li class="link-list__item">
                                     <a class="link link_white" href="news.html">
                                         <span class="link__text">НОВОСТИ И СОБЫТИЯ</span>
@@ -874,6 +927,363 @@
                             <div style="display: inline-block; position: relative; margin-bottom: 24px;">
                                 <a class="button js-dropdown-toggle">bottom</a>
                                 <div class="js-dropdown dropdown">content</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="ui-kit__section">
+                    <div class="ui-kit__section-head">
+                        <div class="container">
+                            <h2>informer</h2>
+                            <p>Блок: blocks/informer/informer</p>
+                        </div>
+                    </div>
+                    <div class="ui-kit__section-content">
+                        <div class="container">
+                            <a class="informer" href="article.html">
+                                <img class="informer__image" src="assets/images/wall1.jpg" alt="" role="presentation" />
+                                <span class="informer__title">2 АПРЕЛЯ 2018. ПРЕЗЕНТАЦИЯ АРКО</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="ui-kit__section">
+                    <div class="ui-kit__section-head">
+                        <div class="container">
+                            <h2>Новостные ссылки</h2>
+                            <p>Блок: blocks/short-news/short-news</p>
+                            <p>Блок: blocks/news/news</p>
+                        </div>
+                    </div>
+                    <div class="ui-kit__section-content">
+                        <div class="container">
+                            <p class="ui-kit__description">Текстовые новости .short-news</p>
+                            <div class="grid grid_small">
+                                <div class="grid__col grid__col_xs_12 grid__col_md_6 grid__col_xl_4">
+                                    <a class="short-news" href="article.html">
+                                        <time class="short-news__time">01 Марта 2018</time>
+                                        <span class="short-news__text">Заур Болотаев номинирован на премию ОСКАР Американской Киноакадемии.</span>
+                                    </a>
+                                </div>
+                                <div class="grid__col grid__col_xs_12 grid__col_md_6 grid__col_xl_4">
+                                    <a class="short-news" href="article.html">
+                                        <time class="short-news__time">30 Февраля 2018</time>
+                                        <span class="short-news__text">Александр Симонов будет снимать новый фильм Кончаловского на пятьсот мобильных телефонов Nokia.</span>
+                                    </a>
+                                </div>
+                                <div class="grid__col grid__col_xs_12 grid__col_md_6 grid__col_xl_4">
+                                    <a class="short-news" href="article.html">
+                                        <time class="short-news__time">1 Января 2018</time>
+                                        <span class="short-news__text">Кинематографисты Москвы отпраздновали наступление Нового года сожжением киностудии имени Горького.</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="ui-kit__description">Блоки новостей .news</p>
+                            <div class="grid grid_small">
+                                <div class="grid__col grid__col_xs_12 grid__col_md_6 grid__col_xl_4">
+                                    <a class="news" href="article.html">
+                                        <img class="news__image" src="assets/images/news1.jpg" alt="" role="presentation" />
+                                        <span class="news__title">Канны-2018:
+                                            <br> &laquo;Лето&raquo; Кирилла Серебренникова в&nbsp;конкурсной программе фестиваля</span>
+                                    </a>
+                                </div>
+                                <div class="grid__col grid__col_xs_12 grid__col_md_6 grid__col_xl_4">
+                                    <a class="news" href="article.html">
+                                        <img class="news__image" src="assets/images/news2.jpg" alt="" role="presentation" />
+                                        <span class="news__title">Комикс &laquo;Инъекция&raquo;
+                                            <br> Уоррен Эллиса может стать сериалом</span>
+                                    </a>
+                                </div>
+                                <div class="grid__col grid__col_xs_12 grid__col_md_6 grid__col_xl_4">
+                                    <a class="news" href="article.html">
+                                        <img class="news__image" src="assets/images/news3.jpg" alt="" role="presentation" />
+                                        <span class="news__title">Саша Барон Коэн снимется в мини-сериале Netflix &laquo;Шпион&raquo;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="ui-kit__section">
+                    <div class="ui-kit__section-head">
+                        <div class="container">
+                            <h2>Медиа контент</h2>
+                            <p>Блок: blocks/media/media</p>
+                            <p>.media('poster')(href="content-link")</p>
+                        </div>
+                    </div>
+                    <div class="ui-kit__section-content">
+                        <div class="container">
+                            <div class="grid grid_small">
+                                <div class="grid__col grid__col_xs_12 grid__col_xl_6">
+                                    <p class="ui-kit__description">изображение
+                                        <a class="media js-fancybox" href="assets/images/news4.jpg">
+                                            <img class="media__image" src="assets/images/news4.jpg" alt="" role="presentation" />
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="grid__col grid__col_xs_12 grid__col_xl_6">
+                                    <p class="ui-kit__description">youtube
+                                        <a class="media js-fancybox" href="https://www.youtube.com/watch?v=Ietf_2u18Yo">
+                                            <img class="media__image" src="assets/images/poster-1.jpg" alt="" role="presentation" />
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="grid__col grid__col_xs_12 grid__col_xl_6">
+                                    <p class="ui-kit__description">vimeo
+                                        <a class="media js-fancybox" href="https://vimeo.com/57785714">
+                                            <img class="media__image" src="assets/images/poster-2.jpg" alt="" role="presentation" />
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="grid__col grid__col_xs_12 grid__col_xl_6">
+                                    <p class="ui-kit__description">внутреннее видео</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="ui-kit__section">
+                    <div class="ui-kit__section-head">
+                        <div class="container">
+                            <h2>Фильтры</h2>
+                            <p>Блок: blocks/filter/filter</p>
+                        </div>
+                    </div>
+                    <div class="ui-kit__section-content">
+                        <div class="container">
+                            <p class="ui-kit__description">Филтр алфавит .filter</p>
+                            <ul class="link-list filter">
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">А</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">Б</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">В</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">Г</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">Д</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">Е</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">Ё</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">Ж</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">З</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">И</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">К</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">Л</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">М</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">Н</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">О</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">П</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">Р</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">С</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">Т</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">У</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">Ф</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">Х</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">Ц</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">Ч</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">Ш</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">Щ</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">Э</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">Ю</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">Я</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item active">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">А-Я</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="ui-kit__description">Пагинация .filter._pagination</p>
+                            <ul class="link-list filter filter_pagination">
+                                <li class="link-list__item active">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">1</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">2</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">3</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">4</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">5</span>
+                                    </a>
+                                </li>
+                                <li class="link-list__item">
+                                    <a class="link link_gray2" href="#">
+                                        <span class="link__text">6</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="ui-kit__section">
+                    <div class="ui-kit__section-head">
+                        <div class="container">
+                            <h2>Карточка каталога</h2>
+                            <p>Блок: blocks/person/person</p>
+                        </div>
+                    </div>
+                    <div class="ui-kit__section-content">
+                        <div class="container">
+                            <div class="grid">
+                                <div class="grid__col grid__col_xs_12 grid__col_lg_6 grid__col_xl_4">
+                                    <a class="person" href="member.html">
+                                        <span class="avatar">
+                                            <img class="avatar__image" src="assets/images/avatar-1.jpg" alt="" role="presentation" />
+                                        </span>
+                                        <span class="person__describe">
+                                            <span class="person__title">Роджер Дикинс</span>
+                                            <span class="person__text">Химки</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="grid__col grid__col_xs_12 grid__col_lg_6 grid__col_xl_4">
+                                    <a class="person" href="member.html">
+                                        <span class="avatar">
+                                            <img class="avatar__image" src="assets/images/avatar-2.jpg" alt="" role="presentation" />
+                                        </span>
+                                        <span class="person__describe">
+                                            <span class="person__title">Эммануэль Любецки</span>
+                                            <span class="person__text">Лос-Анджелес</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="grid__col grid__col_xs_12 grid__col_lg_6 grid__col_xl_4">
+                                    <a class="person" href="member.html">
+                                        <span class="avatar">
+                                            <img class="avatar__image" src="assets/images/avatar-3.jpg" alt="" role="presentation" />
+                                        </span>
+                                        <span class="person__describe">
+                                            <span class="person__title">Влад Опельянц</span>
+                                            <span class="person__text">Москва</span>
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
