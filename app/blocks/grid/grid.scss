@@ -52,4 +52,18 @@ $new-breakpoints: map_remove($breakgrid, $default-breakpoit-name);
       }
     }
   }
+
+  &_mid {
+    margin-left: -$grid-gap-mid/2;
+    margin-right: -$grid-gap-mid/2;
+    margin-top: 0;
+    margin-top: -$grid-gap-mid-vertical;
+
+    .grid {
+
+      &__col {
+        padding: $grid-gap-mid-vertical $grid-gap-mid/2 0;
+      }
+    }
+  }
 }

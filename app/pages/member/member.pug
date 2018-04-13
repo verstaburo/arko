@@ -1,0 +1,21 @@
+extends ../../layouts/default
+
+block head
+  - var pageTitle = 'АРКО - Участник'
+
+block content
+  +e.content_pad40.member__
+    +filter.__filter
+    +user-info.__info
+    +gallery('ШОУРИЛ').__portfolio
+      +col({xs: 12, xl: 6})
+        +media('assets/images/poster-1.jpg').__item(href="https://www.youtube.com/watch?v=Ietf_2u18Yo")
+      +col({xs: 12, xl: 6})
+        +media('assets/images/poster-2.jpg').__item(href="https://vimeo.com/57785714")
+    +gallery('РЕКЛАМНЫЕ РОЛИКИ').__portfolio
+      +col({xs: 12, xl: 6})
+        +media('assets/images/poster-3.jpg').__item(href="assets/video/sample.mp4")
+      +col({xs: 12, xl: 6})
+        +media('assets/images/poster-3.jpg').__item(href="assets/video/sample.mp4")
+block footer
+  - noborder = false

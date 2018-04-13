@@ -23,6 +23,9 @@ block content
           p Колонок: 12 ($grid-cols)
           p Горизонтальное расстояние между колонками: 48px ($grid-gap)
           p Вертикальное расстояние между колонками: 24px ($grid-gap-vertical)
+          p Сетка со средними отступами .grid.grid_mid
+          p Горизонтальное расстояние между колонками: 30px ($grid-gap-mid)
+          p Вертикальное расстояние между колонками: 30px ($grid-gap-mid-vertical)
           p Сетка с маленькими отступами .grid.grid_smal
           p Горизонтальное расстояние между колонками: 20px ($grid-gap-small)
           p Вертикальное расстояние между колонками: 20px ($grid-gap-small-vertical)
@@ -60,7 +63,26 @@ block content
             +col(6)
             +col(6)
           +ui-description .grid.grid_small
-          +grid.grid_small
+          +grid.grid_small(style="margin-bottom: 20px")
+            +col(1)
+            +col(1)
+            +col(1)
+            +col(1)
+            +col(1)
+            +col(1)
+            +col(1)
+            +col(1)
+            +col(1)
+            +col(1)
+            +col(1)
+            +col(1)
+            +col(4)
+            +col(4)
+            +col(4)
+            +col(6)
+            +col(6)
+          +ui-description .grid.grid_mid
+          +grid.grid_mid
             +col(1)
             +col(1)
             +col(1)
@@ -100,6 +122,8 @@ block content
             +ui-color('#cac9c9', '$color-light-gray-2', true)
             +ui-color('#a7a7a7', '$color-light-gray-3')
             +ui-color('#666', '$color-gray-3')
+            +ui-color('#fefefe', '$color-cream', true)
+            +ui-color('#005e81', '$color-blue')
 
       //- Цвета
       +ui-section
@@ -341,8 +365,20 @@ block content
                 +link._ls(href="#") ВХОД
               +e.LI.item
                 +link._ls._gray(href="#") РЕГИСТРАЦИЯ
+          +ui-description .link-list._mid-margin
+          +link-list._mid-margin
+            +e.LI.item
+                +link._white(href="news.html") НОВОСТИ И СОБЫТИЯ
+            +e.LI.item
+                +link._white(href="catalog.html") УЧАСТНИКИ
           +ui-description .link-list._big-margin
           +link-list._big-margin
+            +e.LI.item
+                +link._white(href="news.html") НОВОСТИ И СОБЫТИЯ
+            +e.LI.item
+                +link._white(href="catalog.html") УЧАСТНИКИ
+          +ui-description .link-list._vertical
+          +link-list._vertical
             +e.LI.item
                 +link._white(href="news.html") НОВОСТИ И СОБЫТИЯ
             +e.LI.item
@@ -489,6 +525,84 @@ block content
           div(style="display: inline-block; position: relative; margin-bottom: 24px;")
             +button.js-dropdown-toggle bottom
             +dropdown content
+
+      //- Информер
+      +ui-section
+        +ui-section-head
+          h2 informer
+          p Блок: blocks/informer/informer
+        +ui-section-content
+          +informer('assets/images/wall1.jpg', '2 АПРЕЛЯ 2018. ПРЕЗЕНТАЦИЯ АРКО')(href="article.html")
+
+      //- Новости
+      +ui-section
+        +ui-section-head
+          h2 Новостные ссылки
+          p Блок: blocks/short-news/short-news
+          p Блок: blocks/news/news
+        +ui-section-content
+          +ui-description Текстовые новости .short-news
+          +grid.grid_small
+            +col({xs: 12, md: 6, xl: 4})
+              +short-news('01 Марта 2018')(href="article.html") Заур Болотаев номинирован на премию ОСКАР Американской Киноакадемии.
+            +col({xs: 12, md: 6, xl: 4})
+              +short-news('30 Февраля 2018')(href="article.html") Александр Симонов будет снимать новый фильм Кончаловского на пятьсот мобильных телефонов Nokia.
+            +col({xs: 12, md: 6, xl: 4})
+              +short-news('1 Января 2018')(href="article.html") Кинематографисты Москвы отпраздновали наступление Нового года сожжением киностудии имени Горького.
+          +ui-description Блоки новостей .news
+          +grid.grid_small
+            +col({xs: 12, md: 6, xl: 4})
+              +news('assets/images/news1.jpg')(href="article.html") Канны-2018: <br> &laquo;Лето&raquo; Кирилла Серебренникова в&nbsp;конкурсной программе фестиваля
+            +col({xs: 12, md: 6, xl: 4})
+              +news('assets/images/news2.jpg')(href="article.html") Комикс &laquo;Инъекция&raquo; <br> Уоррен Эллиса может стать сериалом
+            +col({xs: 12, md: 6, xl: 4})
+              +news('assets/images/news3.jpg')(href="article.html") Саша Барон Коэн снимется в мини-сериале Netflix &laquo;Шпион&raquo;
+
+      //- Медиа контент
+      +ui-section
+        +ui-section-head
+          h2 Медиа контент
+          p Блок: blocks/media/media
+          p .media('poster')(href="content-link")
+        +ui-section-content
+          +grid.grid_small
+            +col({xs: 12, xl: 6})
+              +ui-description изображение
+                +media('assets/images/news4.jpg')(href="assets/images/news4.jpg")
+            +col({xs: 12, xl: 6})
+              +ui-description youtube
+                +media('assets/images/poster-1.jpg')(href="https://www.youtube.com/watch?v=Ietf_2u18Yo")
+            +col({xs: 12, xl: 6})
+              +ui-description vimeo
+                +media('assets/images/poster-2.jpg')(href="https://vimeo.com/57785714")
+            +col({xs: 12, xl: 6})
+              +ui-description внутреннее видео
+
+      //- Фильтры
+      +ui-section
+        +ui-section-head
+          h2 Фильтры
+          p Блок: blocks/filter/filter
+        +ui-section-content
+          +ui-description Филтр алфавит .filter
+          +filter
+          +ui-description Пагинация .filter._pagination
+          +filter-pagination
+
+      //- Карточка в каталоге участников
+      +ui-section
+        +ui-section-head
+          h2 Карточка каталога
+          p Блок: blocks/person/person
+        +ui-section-content
+          +grid
+            +col({xs: 12, lg: 6, xl: 4})
+              +person('assets/images/avatar-1.jpg', 'Роджер Дикинс', 'Химки')(href="member.html")
+            +col({xs: 12, lg: 6, xl: 4})
+              +person('assets/images/avatar-2.jpg', 'Эммануэль Любецки', 'Лос-Анджелес')(href="member.html")
+            +col({xs: 12, lg: 6, xl: 4})
+              +person('assets/images/avatar-3.jpg', 'Влад Опельянц', 'Москва')(href="member.html")
+
 
       //- put-block-into-slot
       +ui-section

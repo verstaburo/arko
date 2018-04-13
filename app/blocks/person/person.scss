@@ -8,7 +8,7 @@
     display: block;
     width: 100%;
     @include text-big;
-    color: $color-ligh-gray-3;
+    color: $color-light-gray-3;
   }
 
   &__describe {
@@ -18,7 +18,7 @@
 
   &__title {
     @include heading-3;
-    color: $color-ligh-gray-2;
+    color: $color-light-gray-2;
     margin-bottom: 2px;
   }
 

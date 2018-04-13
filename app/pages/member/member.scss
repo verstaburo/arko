@@ -1,0 +1,14 @@
+.member {
+
+  &__filter {
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    padding-left: 6px;
+
+    @include screen('tablet') {
+      top: -11px;
+      margin-bottom: 12px;
+    }
+  }
+}
