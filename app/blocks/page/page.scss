@@ -16,6 +16,12 @@
     }
   }
 
+  &__title {
+    @include heading-1;
+    line-height: 1;
+    margin-bottom: 30px;
+  }
+
   &__content {
     width: 100%;
     box-sizing: border-box;

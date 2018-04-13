@@ -1,6 +1,22 @@
 extends ../../layouts/default
 
 block head
-  - var pageTitle = 'АРКО - Главная'
+  - var pageTitle = 'АРКО - Результат поиска'
 
 block content
+  +e.content.search-result__
+    h1.page__title Найдено X результатов
+    +link-list._vertical.__list
+      +e.LI.item
+        +link._white(href="#") Результат 1
+      +e.LI.item
+        +link._white(href="#") Результат 2
+      +e.LI.item
+        +link._white(href="#") Результат 3
+      +e.LI.item
+        +link._white(href="#") Результат 4
+      +e.LI.item
+        +link._white(href="#") Результат 5
+      +e.LI.item
+        +link._white(href="#") Результат 6
+    +filter-pagination.__pagination

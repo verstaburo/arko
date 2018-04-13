@@ -1,2 +1,10 @@
-.search {
+.search-result {
+
+  .link-list .link {
+    line-height: 1.15;
+  }
+
+  &__list {
+    margin-bottom: 30px;
+  }
 }
