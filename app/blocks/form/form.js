@@ -16,7 +16,7 @@ export default function verify() {
     $(`#${activeform} [required]`).each(function () {
       if (!$(this).val()) {
         $(this).parent().addClass('error');
-        $(this).siblings('.form__label_error').text('Поле не заполнено');
+        $(this).siblings('.form__label_error').text('Пустое поле');
       } else {
         $(this).parent().removeClass('error');
         $(this).siblings('.form__label_error').text('');
@@ -27,14 +27,14 @@ export default function verify() {
     checkempty();
     if (isEmail($(`#${activeform} input[data-type="email"]`).val()) === false) {
       $(`#${activeform} input[data-type="email"]`).parent().addClass('error');
-      $(`#${activeform} input[data-type="email"]`).siblings('.form__label_error').text('Поле заполнено не верно');
+      $(`#${activeform} input[data-type="email"]`).siblings('.form__label_error').text('Ошибка в данных');
     } else {
       $(`#${activeform} input[data-type="email"]`).parent().removeClass('error');
       $(`#${activeform} input[data-type="email"]`).siblings('.form__label_error').text('');
     }
     if (isTel($(`#${activeform} input[type="tel"]`).val()) === false) {
       $(`#${activeform} input[type="tel"]`).parent().addClass('error');
-      $(`#${activeform} input[type="tel"]`).siblings('.form__label_error').text('Поле заполнено не верно');
+      $(`#${activeform} input[type="tel"]`).siblings('.form__label_error').text('Ошибка в данных');
     } else {
       $(`#${activeform} input[type="tel"]`).parent().removeClass('error');
       $(`#${activeform} input[type="tel"]`).siblings('.form__label_error').text('');
@@ -66,7 +66,7 @@ export default function verify() {
     if (!$(self).val()) {
       formerrors += 1;
       $(this).parent().addClass('error');
-      $(this).siblings('.form__label_error').text('Поле не заполнено');
+      $(this).siblings('.form__label_error').text('Пустое поле');
     } else {
       $(this).parent().removeClass('error');
       $(this).siblings('.form__label_error').text('');
@@ -75,7 +75,7 @@ export default function verify() {
       if (isEmail($(`#${activeform} input[data-type="email"]`).val()) === false) {
         formerrors += 1;
         $(self).parent().addClass('error');
-        $(self).siblings('.form__label_error').text('Поле заполнено не верно');
+        $(self).siblings('.form__label_error').text('Ошибка в данных');
       } else {
         $(self).parent().removeClass('error');
         $(self).siblings('.form__label_error').text('');
@@ -85,7 +85,7 @@ export default function verify() {
       if (isTel($(`#${activeform} input[type="tel"]`).val()) === false) {
         formerrors += 1;
         $(self).parent().addClass('error');
-        $(self).siblings('.form__label_error').text('Поле заполнено не верно');
+        $(self).siblings('.form__label_error').text('Ошибка в данных');
       } else {
         $(self).parent().removeClass('error');
         $(self).siblings('.form__label_error').text('');
