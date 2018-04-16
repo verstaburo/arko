@@ -26,12 +26,12 @@
                 <div class="header__col header__col_right">
                     <ul class="link-list">
                         <li class="link-list__item">
-                            <a class="link link_ls" href="#">
+                            <a class="link link_ls js-fancybox" href="#popup-login">
                                 <span class="link__text">ВХОД</span>
                             </a>
                         </li>
                         <li class="link-list__item">
-                            <a class="link link_ls link_gray" href="#">
+                            <a class="link link_ls link_gray js-fancybox" href="#popup-registration">
                                 <span class="link__text">РЕГИСТРАЦИЯ</span>
                             </a>
                         </li>
@@ -170,6 +170,77 @@
             </div>
         </div>
     </main>
+    <div class="popups">
+        <div class="popup popup-login" id="popup-login">
+            <div class="popup__wrapper">
+                <form class="form form_left" id="form-login">
+                    <div class="form__row form__row_title">
+                        <div class="popup__title">Вход</div>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__wrapper">
+                            <span class="form__label">e-mail:</span>
+                            <input class="input form__input" type="text" name="email" required="required" data-type="email" />
+                            <span class="form__label form__label_error"></span>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__wrapper">
+                            <span class="form__label">пароль:</span>
+                            <input class="input form__input" type="password" name="password" required="required" />
+                            <span class="form__label form__label_error"></span>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <button class="button js-verify" type="submit">Войти</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="popup popup-registration" id="popup-registration">
+            <div class="popup__wrapper">
+                <form class="form form_left" id="form-registration">
+                    <div class="form__row form__row_title">
+                        <div class="popup__title">РЕГИСТРАЦИЯ ПОЛЬЗОВАТЕЛЯ</div>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__wrapper">
+                            <span class="form__label">e-mail:</span>
+                            <input class="input form__input" type="text" name="email" required="required" data-type="email" />
+                            <span class="form__label form__label_error"></span>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__wrapper">
+                            <span class="form__label">пароль:</span>
+                            <input class="input form__input" type="password" name="password" required="required" />
+                            <span class="form__label form__label_error"></span>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__wrapper">
+                            <span class="form__label">имя и фамилия:</span>
+                            <input class="input form__input" type="text" name="name" required="required" />
+                            <span class="form__label form__label_error"></span>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__wrapper">
+                            <span class="form__label">телефон:</span>
+                            <input class="input form__input" type="tel" name="phone" required="required" data-type="tel" />
+                            <span class="form__label form__label_error"></span>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__text">Нажимая кнопку «Отправить», я принимаю пользовательское соглашение</div>
+                    </div>
+                    <div class="form__row form__row_button">
+                        <button class="button js-verify" type="submit">ОТПРАВИТЬ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="assets/scripts/app.min.js"></script>
     <script src="assets/scripts/main.js"></script>
 </body>
