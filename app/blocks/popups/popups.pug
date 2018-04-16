@@ -4,4 +4,9 @@ mixin popups()
 
 mixin popup()
   +b.popup&attributes(attributes)
+    +e.wrapper
+      block
+
+mixin popup-title()
+  .popup__title&attributes(attributes)
     block

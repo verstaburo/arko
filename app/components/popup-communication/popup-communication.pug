@@ -1,0 +1,26 @@
+mixin popup-communication()
+  +popup.popup-communication&attributes(attributes)
+    +popup-title СВЯЗАТЬСЯ С ОПЕРАТОРОМ
+    +form#form-communication
+      +e.row
+        +e.LABEL.wrapper
+          +e.label ваше имя:
+          +input.form__input(type="text" name="name" required)
+          +e.label_error
+      +e.row
+        +e.LABEL.wrapper
+          +e.label e-mail:
+          +input.form__input(type="text" name="email" required data-type="email")
+          +e.label_error
+      +e.row
+        +e.LABEL.wrapper
+          +e.label телефон:
+          +input.form__input(type="tel" name="phone" required data-type="tel")
+          +e.label_error
+      +e.row
+        +e.LABEL.wrapper_wide
+          +e.label_top текст:
+          +textarea.form__textarea(name="message" required)
+          +e.label_top._error
+      +e.row
+        +button('button').js-verify(type="submit") ОТПРАВИТЬ

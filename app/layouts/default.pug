@@ -18,5 +18,9 @@ html(lang='ru')
             +short-news('30 декабря 2017')(href="article.html") Организаторы 71-го международного Каннского кинофестиваля анонсировали два важных нововведения. Во-первых, звездам отныне запрещено делать селфи во&nbsp;время прохода по&nbsp;всевозможным &laquo;красным дорожкам&raquo;, а, во-вторых, отменены специальные показы фильмов для прессы, которые проходили раньше официальных премьер.
     block footer
     +footer(noborder)
+    +popups
+      +popup-login#popup-login
+      +popup-registration#popup-registration
+      block popups
     script(src='assets/scripts/app.min.js')
     script(src='assets/scripts/main.js')
