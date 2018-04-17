@@ -24,6 +24,7 @@
                     </a>
                 </div>
                 <div class="header__col header__col_right">
+                    <a class="button header__lk" href="lk.html">ЛИЧНЫЙ КАБИНЕТ</a>
                     <ul class="link-list">
                         <li class="link-list__item">
                             <a class="link link_ls js-fancybox" href="#popup-login">
@@ -245,13 +246,13 @@
                 <div class="gallery member__portfolio">
                     <div class="gallery__title">ШОУРИЛ</div>
                     <div class="grid grid_mid">
-                        <div class="grid__col grid__col_xs_12 grid__col_xl_6">
-                            <a class="media js-fancybox gallery__item" href="https://www.youtube.com/watch?v=Ietf_2u18Yo">
+                        <div class="grid__col grid__col_xs_12 grid__col_xl_6 gallery__item">
+                            <a class="media js-fancybox gallery__media" href="https://www.youtube.com/watch?v=Ietf_2u18Yo">
                                 <img class="media__image" src="assets/images/poster-1.jpg" alt="" role="presentation" />
                             </a>
                         </div>
-                        <div class="grid__col grid__col_xs_12 grid__col_xl_6">
-                            <a class="media js-fancybox gallery__item" href="https://vimeo.com/57785714">
+                        <div class="grid__col grid__col_xs_12 grid__col_xl_6 gallery__item">
+                            <a class="media js-fancybox gallery__media" href="https://vimeo.com/57785714">
                                 <img class="media__image" src="assets/images/poster-2.jpg" alt="" role="presentation" />
                             </a>
                         </div>
@@ -260,13 +261,13 @@
                 <div class="gallery member__portfolio">
                     <div class="gallery__title">РЕКЛАМНЫЕ РОЛИКИ</div>
                     <div class="grid grid_mid">
-                        <div class="grid__col grid__col_xs_12 grid__col_xl_6">
-                            <a class="media js-fancybox gallery__item" href="assets/video/sample.mp4">
+                        <div class="grid__col grid__col_xs_12 grid__col_xl_6 gallery__item">
+                            <a class="media js-fancybox gallery__media" href="assets/video/sample.mp4">
                                 <img class="media__image" src="assets/images/poster-3.jpg" alt="" role="presentation" />
                             </a>
                         </div>
-                        <div class="grid__col grid__col_xs_12 grid__col_xl_6">
-                            <a class="media js-fancybox gallery__item" href="assets/video/sample.mp4">
+                        <div class="grid__col grid__col_xs_12 grid__col_xl_6 gallery__item">
+                            <a class="media js-fancybox gallery__media" href="assets/video/sample.mp4">
                                 <img class="media__image" src="assets/images/poster-3.jpg" alt="" role="presentation" />
                             </a>
                         </div>
@@ -314,14 +315,14 @@
                         <label class="form__wrapper">
                             <span class="form__label">e-mail:</span>
                             <input class="input form__input" type="text" name="email" required="required" data-type="email" />
-                            <span class="form__label form__label_error"></span>
+                            <span class="form__error"></span>
                         </label>
                     </div>
                     <div class="form__row">
                         <label class="form__wrapper">
                             <span class="form__label">пароль:</span>
                             <input class="input form__input" type="password" name="password" required="required" />
-                            <span class="form__label form__label_error"></span>
+                            <span class="form__error"></span>
                         </label>
                     </div>
                     <div class="form__row">
@@ -340,32 +341,34 @@
                         <label class="form__wrapper">
                             <span class="form__label">e-mail:</span>
                             <input class="input form__input" type="text" name="email" required="required" data-type="email" />
-                            <span class="form__label form__label_error"></span>
+                            <span class="form__error"></span>
                         </label>
                     </div>
                     <div class="form__row">
                         <label class="form__wrapper">
                             <span class="form__label">пароль:</span>
                             <input class="input form__input" type="password" name="password" required="required" />
-                            <span class="form__label form__label_error"></span>
+                            <span class="form__error"></span>
                         </label>
                     </div>
                     <div class="form__row">
                         <label class="form__wrapper">
                             <span class="form__label">имя и фамилия:</span>
                             <input class="input form__input" type="text" name="name" required="required" />
-                            <span class="form__label form__label_error"></span>
+                            <span class="form__error"></span>
                         </label>
                     </div>
                     <div class="form__row">
                         <label class="form__wrapper">
                             <span class="form__label">телефон:</span>
                             <input class="input form__input" type="tel" name="phone" required="required" data-type="tel" />
-                            <span class="form__label form__label_error"></span>
+                            <span class="form__error"></span>
                         </label>
                     </div>
                     <div class="form__row">
-                        <div class="form__text">Нажимая кнопку «Отправить», я принимаю пользовательское соглашение</div>
+                        <div class="form__text">Нажимая кнопку «Отправить», я принимаю
+                            <a href="#">пользовательское соглашение</a>
+                        </div>
                     </div>
                     <div class="form__row form__row_button">
                         <button class="button js-verify" type="submit">ОТПРАВИТЬ</button>
@@ -381,28 +384,28 @@
                         <label class="form__wrapper">
                             <span class="form__label">ваше имя:</span>
                             <input class="input form__input" type="text" name="name" required="required" />
-                            <span class="form__label form__label_error"></span>
+                            <span class="form__error"></span>
                         </label>
                     </div>
                     <div class="form__row">
                         <label class="form__wrapper">
                             <span class="form__label">e-mail:</span>
                             <input class="input form__input" type="text" name="email" required="required" data-type="email" />
-                            <span class="form__label form__label_error"></span>
+                            <span class="form__error"></span>
                         </label>
                     </div>
                     <div class="form__row">
                         <label class="form__wrapper">
                             <span class="form__label">телефон:</span>
                             <input class="input form__input" type="tel" name="phone" required="required" data-type="tel" />
-                            <span class="form__label form__label_error"></span>
+                            <span class="form__error"></span>
                         </label>
                     </div>
                     <div class="form__row">
                         <label class="form__wrapper form__wrapper_wide">
                             <span class="form__label form__label_top">текст:</span>
                             <textarea class="textarea form__textarea" name="message" required="required"></textarea>
-                            <span class="form__label form__label_top form__label_error"></span>
+                            <span class="form__error"></span>
                         </label>
                     </div>
                     <div class="form__row">
