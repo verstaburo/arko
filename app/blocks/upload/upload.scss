@@ -1,0 +1,28 @@
+.upload {
+  display: inline-block;
+  @extend .input;
+  text-align: center;
+
+  input {
+    display: none;
+  }
+
+  &_button {
+    padding: 7px 10px;
+    vertical-align: middle;
+    background-color: $color-gray-4;
+    transition: opacity $ease-main;
+    cursor: pointer;
+    text-transform: uppercase;
+    @include text-big;
+    letter-spacing: .02em;
+    line-height: 1;
+    color: $color-background;
+    height: auto;
+    width: auto;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+}

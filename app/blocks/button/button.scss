@@ -8,6 +8,7 @@
   transition: opacity $ease-main;
   cursor: pointer;
   text-transform: uppercase;
+  text-align: center;
 
   @include text-big;
   letter-spacing: .02em;
@@ -21,4 +22,8 @@
 
   &:hover,
   &.is-active { opacity: .5; }
+
+  &_gray {
+    background-color: $color-gray-4;
+  }
 }

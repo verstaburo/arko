@@ -19,8 +19,12 @@
 
   padding-top: 3px;
   padding-bottom: 5px;
-  min-height: 87px;
+  height: 87px;
   resize: none;
+
+  &_big {
+    height: 136px;
+  }
 }
 
 .checkradio {
@@ -125,7 +129,6 @@
 }
 
 .choices {
-
   &__inner, &[data-type*='select-one'] &__inner {
     @extend .select;
 
@@ -137,6 +140,8 @@
     .choices__inner { border: none; }
 
     &::after {
+      opacity: 0;
+      pointer-events: none;
       border-width: 4px 4px 0;
       top: 0;
       bottom: 0;
@@ -163,20 +168,27 @@
       box-sizing: border-box;
       height: 100%;
       padding: 0;
-      padding-right: 20px;
 
       .choices__item {
         display: table-cell;
         vertical-align: middle;
+        text-align: center;
+        max-width: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
       }
     }
 
     &--dropdown {
       box-sizing: border-box;
       background: $color-middle-gray;
+      margin-top: 2px;
+      z-index: 2;
 
       .choices__item {
         padding: 10px;
+        word-break: normal;
 
         &--selectable {
           transition: opacity $ease-main;
@@ -263,6 +275,7 @@
   border-radius: 0;
   transition: opacity $ease-main, transform $ease-main, left 0s $ease-main;
   font-family: $font-main;
+  z-index: 100001;
 
   &.-from-bottom- {
     transform: translateY(8px);

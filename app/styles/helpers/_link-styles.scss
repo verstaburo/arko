@@ -36,3 +36,8 @@
   color: $color-gray-3;
   fill: $color-gray-3;
 }
+
+@mixin link-bordered {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}

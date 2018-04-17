@@ -16,10 +16,10 @@ export default function verify() {
     $(`#${activeform} [required]`).each(function () {
       if (!$(this).val()) {
         $(this).parent().addClass('error');
-        $(this).siblings('.form__label_error').text('Пустое поле');
+        $(this).siblings('.form__error').text('Пустое поле');
       } else {
         $(this).parent().removeClass('error');
-        $(this).siblings('.form__label_error').text('');
+        $(this).siblings('.form__error').text('');
       }
     });
   }
@@ -27,17 +27,17 @@ export default function verify() {
     checkempty();
     if (isEmail($(`#${activeform} input[data-type="email"]`).val()) === false) {
       $(`#${activeform} input[data-type="email"]`).parent().addClass('error');
-      $(`#${activeform} input[data-type="email"]`).siblings('.form__label_error').text('Ошибка в данных');
+      $(`#${activeform} input[data-type="email"]`).siblings('.form__error').text('Ошибка в данных');
     } else {
       $(`#${activeform} input[data-type="email"]`).parent().removeClass('error');
-      $(`#${activeform} input[data-type="email"]`).siblings('.form__label_error').text('');
+      $(`#${activeform} input[data-type="email"]`).siblings('.form__error').text('');
     }
     if (isTel($(`#${activeform} input[type="tel"]`).val()) === false) {
       $(`#${activeform} input[type="tel"]`).parent().addClass('error');
-      $(`#${activeform} input[type="tel"]`).siblings('.form__label_error').text('Ошибка в данных');
+      $(`#${activeform} input[type="tel"]`).siblings('.form__error').text('Ошибка в данных');
     } else {
       $(`#${activeform} input[type="tel"]`).parent().removeClass('error');
-      $(`#${activeform} input[type="tel"]`).siblings('.form__label_error').text('');
+      $(`#${activeform} input[type="tel"]`).siblings('.form__error').text('');
     }
   }
   function checkandsubmit() {
@@ -66,29 +66,29 @@ export default function verify() {
     if (!$(self).val()) {
       formerrors += 1;
       $(this).parent().addClass('error');
-      $(this).siblings('.form__label_error').text('Пустое поле');
+      $(this).siblings('.form__error').text('Пустое поле');
     } else {
       $(this).parent().removeClass('error');
-      $(this).siblings('.form__label_error').text('');
+      $(this).siblings('.form__error').text('');
     }
     if ($(self).data('type') === 'email') {
       if (isEmail($(`#${activeform} input[data-type="email"]`).val()) === false) {
         formerrors += 1;
         $(self).parent().addClass('error');
-        $(self).siblings('.form__label_error').text('Ошибка в данных');
+        $(self).siblings('.form__error').text('Ошибка в данных');
       } else {
         $(self).parent().removeClass('error');
-        $(self).siblings('.form__label_error').text('');
+        $(self).siblings('.form__error').text('');
       }
     }
     if ($(self).attr('type') === 'tel') {
       if (isTel($(`#${activeform} input[type="tel"]`).val()) === false) {
         formerrors += 1;
         $(self).parent().addClass('error');
-        $(self).siblings('.form__label_error').text('Ошибка в данных');
+        $(self).siblings('.form__error').text('Ошибка в данных');
       } else {
         $(self).parent().removeClass('error');
-        $(self).siblings('.form__label_error').text('');
+        $(self).siblings('.form__error').text('');
       }
     }
   });

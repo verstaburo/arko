@@ -12,6 +12,7 @@ import tooltips from '../blocks/tooltip/tooltip';
 import tabs from '../blocks/tabs/tabs';
 import maps from '../blocks/map/map';
 import verify from '../blocks/form/form';
+import RemoveItem from '../components/gallery/gallery';
 import '../blocks/rating/rating';
 import '../blocks/accordion/accordion';
 import '../blocks/dropdown/dropdown';
@@ -37,4 +38,5 @@ $(() => {
   maps();
   scrollanimation();
   verify();
+  RemoveItem();
 });

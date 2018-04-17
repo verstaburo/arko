@@ -47,4 +47,8 @@
   &_ls-big {
     letter-spacing: .096em;
   }
+
+  &_bordered {
+    @include link-bordered;
+  }
 }

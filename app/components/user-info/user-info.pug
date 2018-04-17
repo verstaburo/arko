@@ -10,3 +10,16 @@ mixin user-info()
         +e.LI Премиия «Золотой Орел» 2017: лучший оператор (Викинг)
         +e.LI Премия ТЭФИ 2009 - лучший оператор телевизиооного фильма
         +e.LI Премиия «Золотой Орел» 2008: лучший оператор (Адмирал)
+
+mixin user-info-lk()
+  +b.user-info&attributes(attributes)
+    +e.col_left
+      +avatar('assets/images/avatar-4.jpg').__avatar
+    +e.col_right
+      +e.title Игорь Гринякин.  Москва.
+      +e.subtitle 24 февраля 1981г. 37 лет.
+      +button('a').__button.js-fancybox(href="#popup-edit-data") ИЗМЕНИТЬ ДАННЫЕ
+      +e.UL.awards.js-scrollbar
+        +e.LI Премиия «Золотой Орел» 2017: лучший оператор (Викинг)
+        +e.LI Премия ТЭФИ 2009 - лучший оператор телевизиооного фильма
+        +e.LI Премиия «Золотой Орел» 2008: лучший оператор (Адмирал)

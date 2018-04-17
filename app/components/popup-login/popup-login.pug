@@ -7,11 +7,11 @@ mixin popup-login()
         +e.LABEL.wrapper
           +e.label e-mail:
           +input.form__input(type="text" name="email" required data-type="email")
-          +e.label_error
+          +e.error
       +e.row
         +e.LABEL.wrapper
           +e.label пароль:
           +input.form__input(type="password" name="password" required)
-          +e.label_error
+          +e.error
       +e.row
         +button('button').js-verify(type="submit") Войти

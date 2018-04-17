@@ -5,8 +5,10 @@ doctype html
 html(lang='ru')
   include head
   - var noborder = true
+  - var headerClass = ' '
   body
-    +header
+    block header
+    +header(class=headerClass)
     +page
       .container
         block content

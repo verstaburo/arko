@@ -10,6 +10,7 @@
   width: 100%;
   box-sizing: border-box;
   padding: 20px 25px;
+  z-index: 100000;
 
   @include screen('tablet') {
     max-width: 687px;
@@ -32,6 +33,11 @@
     top: 12px;
     right: 17px;
     transform: rotateY(180deg);
+  }
+
+  .form {
+    position: relative;
+    z-index: 100010;
   }
 
   &__wrapper {

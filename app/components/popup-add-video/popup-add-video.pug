@@ -1,0 +1,37 @@
+mixin popup-add-video()
+  +popup.popup-add-video&attributes(attributes)
+    +popup-title ДОБАВЛЕНИЕ ВИДЕО
+    +form#form-add-video
+      +e.row
+        +e.wrapper_small._mhide
+        +e.LABEL.wrapper
+          +e.label добавить видео по ссылке:
+          +input.form__input(type="url" name="video-link")
+          +e.error
+        +e.wrapper_small
+          +e.label_up категория:
+          +select.form__select
+            option(value="шоурил" selected) шоурил
+            option(value="рекламные ролики") рекламные ролики
+      +e.row
+        +e.LABEL.wrapper
+          +e.label название:
+          +input.form__input(type="text" name="video-title1")
+          +e.error
+      +e.row
+        +e.wrapper_small._mhide
+        +e.wrapper
+          +e.label загрузить видео:
+          +upload.__upload выбрать файл
+        +e.wrapper_small
+          +e.label_up._dhide категория:
+          +select.form__select
+            option(value="шоурил" selected) шоурил
+            option(value="рекламные ролики") рекламные ролики
+      +e.row
+        +e.LABEL.wrapper
+          +e.label название:
+          +input.form__input(type="text" name="video-title2")
+          +e.error
+      +e.row_bmg
+        +button('button').js-verify(type="submit") ОТПРАВИТЬ

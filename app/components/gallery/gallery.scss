@@ -13,7 +13,33 @@
     margin-bottom: 30px;
   }
 
-  &__item {
+  &__media {
     padding-top: 42.3%;
+  }
+
+  &__describe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &__name {
+    margin-top: 4px;
+    @include text-bigger;
+    margin-right: 20px;
+  }
+
+  &__edit {
+
+    .link-list__item {
+      margin-top: 4px;
+    }
+
+    .link {
+      text-transform: none;
+    }
   }
 }

@@ -7,23 +7,24 @@ mixin popup-registration()
         +e.LABEL.wrapper
           +e.label e-mail:
           +input.form__input(type="text" name="email" required data-type="email")
-          +e.label_error
+          +e.error
       +e.row
         +e.LABEL.wrapper
           +e.label пароль:
           +input.form__input(type="password" name="password" required)
-          +e.label_error
+          +e.error
       +e.row
         +e.LABEL.wrapper
           +e.label имя и фамилия:
           +input.form__input(type="text" name="name" required)
-          +e.label_error
+          +e.error
       +e.row
         +e.LABEL.wrapper
           +e.label телефон:
           +input.form__input(type="tel" name="phone" required data-type="tel")
-          +e.label_error
+          +e.error
       +e.row
-        +e.text Нажимая кнопку «Отправить», я принимаю пользовательское соглашение
+        +e.text Нажимая кнопку «Отправить», я принимаю
+          +e.A(href="#") пользовательское соглашение
       +e.row_button
         +button('button').js-verify(type="submit") ОТПРАВИТЬ

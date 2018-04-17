@@ -36,6 +36,12 @@
   font-weight: 400;
 }
 
+@mixin text-bigger {
+  font-size: 15px;
+  line-height: 1.15;
+  font-weight: 400;
+}
+
 @mixin text-big {
   font-size: 13px;
   line-height: 1.05;

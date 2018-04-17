@@ -9,5 +9,6 @@ export default function popups() {
   $('.js-fancybox').fancybox({
     afterLoad: freeze,
     afterClose: unfreeze,
+    defaultType: 'inline',
   });
 }

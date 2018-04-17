@@ -1,0 +1,39 @@
+mixin popup-edit-data()
+  +popup.popup-edit-data&attributes(attributes)
+    +form._left#form-edit-data
+      +e.row_title
+        +popup-title ИЗМЕНЕНИЕ ДАННЫХ
+      +e.row
+        +e.LABEL.wrapper
+          +e.label e-mail:
+          +input.form__input(type="text" name="email" required data-type="email")
+          +e.error
+      +e.row
+        +e.LABEL.wrapper
+          +e.label имя и фамилия:
+          +input.form__input(type="text" name="name" required)
+          +e.error
+      +e.row
+        +e.LABEL.wrapper
+          +e.label телефон:
+          +input.form__input(type="tel" name="phone" required data-type="tel")
+          +e.error
+      +e.row
+        +e.LABEL.wrapper
+          +e.label дата рождения:
+          +input.js-datepicker.form__input(type="text" name="date" readonly required)
+          +e.error
+      +e.row
+        +e.LABEL.wrapper
+          +e.label фильмография:
+          +textarea.textarea_big.form__textarea(name="filmography" required)
+          +e.error
+      +e.row
+        +e.LABEL.wrapper
+          +e.label призы и награды:
+          +textarea.textarea_big.form__textarea(name="awards" required)
+          +e.error
+      +e.row_smg
+        +upload._button ИЗМЕНИТЬ ФОТО
+      +e.row_button
+        +button('button').js-verify(type="submit") СОХРАНИТЬ

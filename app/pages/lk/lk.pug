@@ -1,0 +1,55 @@
+extends ../../layouts/default
+
+block head
+  - var pageTitle = 'АРКО - Личный кабинет'
+
+block header
+  - headerClass = ' is-authorized'
+
+block content
+  +e.content_pad40.member__
+    +filter.__filter
+    +user-info-lk.__info
+    +gallery('ШОУРИЛ').__portfolio
+      +col({xs: 12, xl: 6}).gallery__item
+        +media('assets/images/poster-1.jpg').__media(href="https://www.youtube.com/watch?v=Ietf_2u18Yo")
+        +e.describe
+          +e.name Showreel 2018
+          +link-list.__edit
+            +e.LI.item
+              +link._gray._bordered.js-fancybox(href="#popup-add-video") редактировать
+            +e.LI.item
+              +link._gray._bordered.js-remove-item(href="#") удалить
+      +col({xs: 12, xl: 6}).gallery__item
+        +media('assets/images/poster-2.jpg').__media(href="https://vimeo.com/57785714")
+        +e.describe
+          +e.name Showreel 2015
+          +link-list.__edit
+            +e.LI.item
+              +link._gray._bordered.js-fancybox(href="#popup-add-video") редактировать
+            +e.LI.item
+              +link._gray._bordered.js-remove-item(href="#") удалить
+    +gallery('РЕКЛАМНЫЕ РОЛИКИ').__portfolio
+      +col({xs: 12, xl: 6}).gallery__item
+        +media('assets/images/poster-3.jpg').__media(href="assets/video/sample.mp4")
+        +e.describe
+          +e.name Печеньки ништяк
+          +link-list.__edit
+            +e.LI.item
+              +link._gray._bordered.js-fancybox(href="#popup-add-video") редактировать
+            +e.LI.item
+              +link._gray._bordered.js-remove-item(href="#") удалить
+      +col({xs: 12, xl: 6}).gallery__item
+        +media('assets/images/poster-3.jpg').__media(href="assets/video/sample.mp4")
+        +e.describe
+          +e.name Печеньки ништяк
+          +link-list.__edit
+            +e.LI.item
+              +link._gray._bordered.js-fancybox(href="#popup-add-video") редактировать
+            +e.LI.item
+              +link._gray._bordered.js-remove-item(href="#") удалить
+block footer
+  - noborder = false
+block popups
+  +popup-edit-data#popup-edit-data
+  +popup-add-video#popup-add-video

@@ -36,4 +36,26 @@
   .search {
     margin-top: 9px;
   }
+
+  &__lk {
+    display: none;
+    padding: 4px 10px;
+    width: 134px;
+  }
+
+  &.is-authorized {
+
+    .header {
+      &__lk {
+        display: inline-block;
+      }
+
+      &__top {
+
+        .link-list {
+          display: none;
+        }
+      }
+    }
+  }
 }
