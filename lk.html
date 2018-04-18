@@ -500,7 +500,7 @@
             <div class="popup__wrapper">
                 <div class="popup__title">ДОБАВЛЕНИЕ ВИДЕО</div>
                 <form class="form" id="form-add-video">
-                    <div class="form__row">
+                    <div class="form__row form__row_smg">
                         <div class="form__wrapper form__wrapper_small form__wrapper_mhide"></div>
                         <label class="form__wrapper">
                             <span class="form__label">добавить видео по ссылке:</span>
@@ -509,20 +509,20 @@
                         </label>
                         <div class="form__wrapper form__wrapper_small">
                             <div class="form__label form__label_up">категория:</div>
-                            <select class="select js-select form__select">
+                            <select class="select js-select" name="category-v1">
                                 <option value="шоурил" selected="selected">шоурил</option>
                                 <option value="рекламные ролики">рекламные ролики</option>
                             </select>
                         </div>
                     </div>
-                    <div class="form__row">
+                    <div class="form__row form__row_smg">
                         <label class="form__wrapper">
                             <span class="form__label">название:</span>
                             <input class="input form__input" type="text" name="video-title1" />
                             <span class="form__error"></span>
                         </label>
                     </div>
-                    <div class="form__row">
+                    <div class="form__row form__row_smg">
                         <div class="form__wrapper form__wrapper_small form__wrapper_mhide"></div>
                         <div class="form__wrapper">
                             <div class="form__label">загрузить видео:</div>
@@ -533,13 +533,13 @@
                         </div>
                         <div class="form__wrapper form__wrapper_small">
                             <div class="form__label form__label_up form__label_dhide">категория:</div>
-                            <select class="select js-select form__select">
+                            <select class="select js-select" name="category-v2">
                                 <option value="шоурил" selected="selected">шоурил</option>
                                 <option value="рекламные ролики">рекламные ролики</option>
                             </select>
                         </div>
                     </div>
-                    <div class="form__row">
+                    <div class="form__row form__row_smg">
                         <label class="form__wrapper">
                             <span class="form__label">название:</span>
                             <input class="input form__input" type="text" name="video-title2" />
@@ -547,12 +547,13 @@
                         </label>
                     </div>
                     <div class="form__row form__row_bmg">
-                        <button class="button js-verify" type="submit">ОТПРАВИТЬ</button>
+                        <button class="button" type="submit">ОТПРАВИТЬ</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+    <script src="assets/scripts/libs/selectize.min.js"></script>
     <script src="assets/scripts/app.min.js"></script>
     <script src="assets/scripts/main.js"></script>
 </body>
