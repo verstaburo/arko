@@ -9,6 +9,7 @@ export default function popups() {
   $('.js-fancybox').fancybox({
     afterLoad: freeze,
     touch: false,
+    clickContent: false,
     afterClose: unfreeze,
   });
 }
