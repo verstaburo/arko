@@ -10,7 +10,6 @@
   width: 100%;
   box-sizing: border-box;
   padding: 20px 25px;
-  z-index: 100000;
 
   @include screen('tablet') {
     max-width: 687px;
@@ -85,9 +84,16 @@
 }
 
 .fancybox-close-small {
-  display: none;
-  top: -44px;
+  width: 32px;
+  height: 32px;
+  top: -8px;
+  right: -8px;
+  padding: 0;
   color: $color-basic;
+
+  @include screen('tablet-wide') {
+    display: none;
+  }
 }
 
 .fancybox-close-small:focus::after { outline: none; }
