@@ -10,6 +10,7 @@
   width: 100%;
   box-sizing: border-box;
   padding: 20px 25px;
+  overflow: hidden;
 
   @include screen('tablet') {
     max-width: 687px;
@@ -76,6 +77,7 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 24px;
+    letter-spacing: -.02em;
   }
 }
 
@@ -94,6 +96,10 @@
   @include screen('tablet-wide') {
     display: none;
   }
+}
+
+.fancybox-container {
+  font-family: $font-main;
 }
 
 .fancybox-close-small:focus::after { outline: none; }

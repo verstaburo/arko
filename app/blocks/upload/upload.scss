@@ -2,6 +2,7 @@
   display: inline-block;
   @extend .input;
   text-align: center;
+  cursor: pointer;
 
   input {
     display: none;

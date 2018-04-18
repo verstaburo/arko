@@ -1,5 +1,7 @@
+/*
 // https://github.com/jshjohnson/Choices
 import Choices from 'choices.js';
+*/
 
 // https://github.com/leongersen/noUiSlider
 import noUiSlider from 'nouislider';
@@ -13,10 +15,14 @@ import Inputmask from 'inputmask';
 const $ = window.$;
 
 export function selects() {
-  /* eslint-disable no-unused-vars */
+  /*
   const choices = new Choices('.js-select', {
     searchEnabled: false,
     itemSelectText: '',
+  });
+  */
+  $('.js-select').selectize({
+    sortField: 'text',
   });
   /* eslint-enable no-unused-vars */
 }

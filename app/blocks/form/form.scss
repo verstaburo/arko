@@ -20,6 +20,14 @@
       &:not(:last-child) {
         margin-bottom: 9px;
       }
+
+      .form__wrapper_small {
+        margin-top: 9px;
+
+        @include screen('tablet') {
+          margin-top: 0;
+        }
+      }
     }
 
     &_bmg {
@@ -149,10 +157,11 @@
     display: inline-block;
     @include text-big;
     box-sizing: border-box;
+    letter-spacing: -.02em;
 
     @include screen('tablet') {
       padding-top: 24px;
-      max-width: 260px;
+      max-width: 235px;
     }
 
     a {

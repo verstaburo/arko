@@ -22,20 +22,33 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
   }
 
   &__name {
     margin-top: 4px;
     @include text-bigger;
-    margin-right: 20px;
+    box-sizing: border-box;
+    padding-right: 20px;
+    width: 50%;
   }
 
   &__edit {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: right;
 
     .link-list__item {
       margin-top: 4px;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+
+      &:not(:first-child) {
+        margin-left: 4px;
+      }
     }
 
     .link {
