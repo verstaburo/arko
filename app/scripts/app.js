@@ -7,16 +7,8 @@ import scrollanimation from '../blocks/js-functions/scrollanimation';
 import { selects, sliders, datepicker, inputmask, numberinput } from '../blocks/form-elements/form-elements';
 import popups from '../blocks/popups/popups';
 import scrollbar from '../blocks/scrollbar/scrollbar';
-import slider from '../blocks/slider/slider';
-import tooltips from '../blocks/tooltip/tooltip';
-import tabs from '../blocks/tabs/tabs';
-import maps from '../blocks/map/map';
 import verify from '../blocks/form/form';
 import RemoveItem from '../components/gallery/gallery';
-import '../blocks/rating/rating';
-import '../blocks/accordion/accordion';
-import '../blocks/dropdown/dropdown';
-import '../blocks/put-block-into-slot/put-block-into-slot';
 
 const $ = window.$;
 
@@ -29,13 +21,9 @@ $(() => {
   sliders();
   popups();
   scrollbar();
-  slider();
-  tooltips();
-  tabs();
   datepicker();
   inputmask();
   numberinput();
-  maps();
   scrollanimation();
   verify();
   RemoveItem();

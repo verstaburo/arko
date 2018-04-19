@@ -125,16 +125,6 @@ block content
             +ui-color('#fefefe', '$color-cream', true)
             +ui-color('#005e81', '$color-blue')
 
-      //- Цвета
-      +ui-section
-        +ui-section-head
-          h2 Градиенты
-          p Цвета для градиентов находятся в файле styles/helpers/_variables.scss
-          p Сами градиенты в styles/helpers/_gradients.scss
-        +ui-section-content()
-          +ui-elements-list()
-            +ui-gradient('gradient-main', true)._gradient_main
-
       //- Шрифты и контентная зона
       +ui-section
         +ui-section-head
@@ -181,7 +171,10 @@ block content
                     li Элемент списка
                 li Элемент списка
           +ui-description Другие стили текстов:
-          +ui-custom-text._style-1 Пример кастомного стиля на примере стандартного (%text)
+          +ui-custom-text._style-1 Пример кастомного стиля 12px (text)
+          +ui-custom-text._style-2 Пример кастомного стиля 13px (text-big)
+          +ui-custom-text._style-3 Пример кастомного стиля 15px (text-bigger)
+          +ui-custom-text._style-4 Пример кастомного стиля 11px (text-small)
 
       //- Таблицы
       +ui-section
@@ -297,24 +290,6 @@ block content
               +inputbox()
                 +range()(data-start='40', data-connect='[true, false]', data-min='0', data-max='100')
 
-      //- Табы
-      +ui-section
-        +ui-section-head
-          h2 Табы
-          p Блок: blocks/tabs
-        +ui-section-content()
-          +tabs
-            +tab()(data-tab-target="tab1").active Информация
-            +tab()(data-tab-target="tab2") Контент
-            +tab()(data-tab-target="tab3") Тексты
-          +tabs-content
-            +tab-wrapper()(data-tab="tab1" data-tab-group="testtabs").active
-              p Это таб 1
-            +tab-wrapper()(data-tab="tab2" data-tab-group="testtabs")
-              p Это таб 2
-            +tab-wrapper()(data-tab="tab3" data-tab-group="testtabs")
-              p Это таб 3
-
       //- Попапы
       +ui-section
         +ui-section-head
@@ -323,12 +298,10 @@ block content
         +ui-section-content()
           +ui-description .js-fancybox
           +link()(href="#testpopup").js-fancybox Открыть попап
-          +ui-description Верстка попапов:
-          +link()(onclick="$('.popups').toggle()") Показать попапы
-          +popups.__ui-popups
+          +popups
             +popup#testpopup
+              +popup-title Тестовый попап
               +content-zone
-                h2 Тестовый попап
                 p С тестовым контентом
 
       //- Ссылки
@@ -340,6 +313,10 @@ block content
         +ui-section-content()
           +ui-description .link
           +link()(href="#") Обычная ссылка
+          +ui-description .link._bordered
+          +link()(href="#")._bordered Подчеркнутая ссылка
+          +ui-description .link._noup
+          +link()(href="#")._noup Cсылка не вверхнем регистре
           +ui-description .link._white
           +link()(href="#")._white Белая ссылка
           +ui-description .link._yellow
@@ -402,37 +379,6 @@ block content
           +e.scrolldemo.js-scrollbar
             +e.scrolldemo-block
 
-      //- Слайдер
-      +ui-section
-        +ui-section-head
-          h2 Слайдер
-          p Блок: blocks/slider/slider
-        +ui-section-content()
-          +ui-description .js-slider
-          +slider(true, true)
-            +slide Привет
-            +slide Привет
-            +slide Привет
-            +slide Привет
-
-      //- Подсказки
-      +ui-section
-        +ui-section-head
-          h2 Подсказки
-          p Блок: blocks/tooltip/tooltip
-        +ui-section-content()
-          +ui-description .js-tooltip
-          +button()(href="#" title="Пример подсказки").js-tooltip Пример подсказки
-
-      //- Карты
-      +ui-section
-        +ui-section-head
-          h2 Карты
-          p Блок: blocks/map/map
-        +ui-section-content()
-          +ui-description #map
-          +map()#map
-
       //- Анимации
       +ui-section
         +ui-section-head
@@ -451,77 +397,6 @@ block content
           p Блок: blocks/breadcrumbs/breadcrumbs
         +ui-section-content()
           +breadcrumbs(['Главная', 'Раздел', 'Страница'])
-
-      //- Аккордион
-      +ui-section
-        +ui-section-head
-          h2 Аккордион
-          p Блок: blocks/accordion/accordion
-
-        +ui-section-content()
-          +ui-description Multiple true
-          +accordions
-            +accordion.is-active
-              +accordion-header
-                +accordion-button Блок #1
-              +accordion-body
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                | Obcaecati aliquam perferendis velit ex numquam, consequatur
-                | doloribus magnam accusantium expedita eveniet,
-                | quisquam voluptate quos maiores impedit quibusdam.
-                | Quod sit molestias sapiente.
-            +accordion
-              +accordion-header
-                +accordion-button Блок #2
-              +accordion-body
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                | Obcaecati aliquam perferendis velit ex numquam, consequatur
-                | doloribus magnam accusantium expedita eveniet,
-                | quisquam voluptate quos maiores impedit quibusdam.
-                | Quod sit molestias sapiente.
-
-          +ui-description Multiple false
-          +accordions(false)
-            +accordion.is-active
-              +accordion-header
-                +accordion-button Блок #1
-              +accordion-body
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                | Obcaecati aliquam perferendis velit ex numquam, consequatur
-                | doloribus magnam accusantium expedita eveniet,
-                | quisquam voluptate quos maiores impedit quibusdam.
-                | Quod sit molestias sapiente.
-            +accordion
-              +accordion-header
-                +accordion-button Блок #2
-              +accordion-body
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                | Obcaecati aliquam perferendis velit ex numquam, consequatur
-                | doloribus magnam accusantium expedita eveniet,
-                | quisquam voluptate quos maiores impedit quibusdam.
-                | Quod sit molestias sapiente.
-
-      //- Dropdown
-      +ui-section
-        +ui-section-head
-          h2 Dropdown
-          p Блок: blocks/dropdown/dropdown
-        +ui-section-content
-          +ui-description Для использования, нужно "кнопке" добавить класс .js-dropdown-toggle
-          div(style="display: inline-block; position: relative; margin-bottom: 24px;")
-            +button.js-dropdown-toggle top
-            +dropdown._position_top content
-          div(style="display: inline-block; position: relative; margin-bottom: 24px;")
-            +button.js-dropdown-toggle bottom
-            +dropdown content
-
-      //- Информер
-      +ui-section
-        +ui-section-head
-          h2 informer
-          p Блок: blocks/informer/informer
-        +ui-section-content
-          +informer('assets/images/wall1.jpg', '2 АПРЕЛЯ 2018. ПРЕЗЕНТАЦИЯ АРКО')(href="article.html")
 
       //- Новости
       +ui-section
@@ -592,37 +467,32 @@ block content
             +col({xs: 12, lg: 6, xl: 4})
               +person('assets/images/avatar-3.jpg', 'Влад Опельянц', 'Москва')(href="member.html")
 
-
-      //- put-block-into-slot
+      //- Галлерея
       +ui-section
         +ui-section-head
-          h2 Перемещение блока по слотам
-          p Блок: blocks/put-block-into-slot/put-block-into-slot
-
+          h2 Галлерея
+          p Блок: blocks/gallery/gallery
         +ui-section-content
-          +ui-description При смене брейкпоинта app/scripts/globalOptions.js блоки будут перемещены в соответствующий слот
-          +grid
-            +col(12)
-              p(style="font-size: 12px; color: #999;")
-                | +put-block-into-slot('slotId', 'xl')
-              +put-block-into-slot('slotId', 'xl')
-                div(style="width: 100%; padding: 15px; margin-top: 15px; border: 1px black dashed; text-align: center;") Этот блок будет перемещаться в зависимости от брейпоинта
-            +col(3)
-              p(style="font-size: 12px; color: #999;")
-                | +put-block-into-slot('slotId', 'lg')
-              +put-block-into-slot('slotId', 'lg')
-            +col(3)
-              p(style="font-size: 12px; color: #999;")
-                | +put-block-into-slot('slotId', 'md')
-              +put-block-into-slot('slotId', 'md')
-            +col(3)
-              p(style="font-size: 12px; color: #999;")
-                | +put-block-into-slot('slotId', 'sm')
-              +put-block-into-slot('slotId', 'sm')
-            +col(3)
-              p(style="font-size: 12px; color: #999;")
-                | +put-block-into-slot('slotId', 'xs')
-              +put-block-into-slot('slotId', 'xs')
+          +gallery('ШОУРИЛ').__portfolio
+            +col({xs: 12, xl: 6}).gallery__item
+              +media('assets/images/poster-1.jpg').__media(href="https://www.youtube.com/watch?v=Ietf_2u18Yo")
+              +e.describe
+                +e.name Showreel 2018
+                +link-list.__edit
+                  +e.LI.item
+                    +link._gray._bordered._noup.js-fancybox(href="#popup-add-video") редактировать
+                  +e.LI.item
+                    +link._gray._bordered._noup.js-remove-item(href="#") удалить
+            +col({xs: 12, xl: 6}).gallery__item
+              +media('assets/images/poster-2.jpg').__media(href="https://vimeo.com/57785714")
+              +e.describe
+                +e.name Showreel 2015
+                +link-list.__edit
+                  +e.LI.item
+                    +link._gray._bordered._noup.js-fancybox(href="#popup-add-video") редактировать
+                  +e.LI.item
+                    +link._gray._bordered._noup.js-remove-item(href="#") удалить
+
 
   script
     |

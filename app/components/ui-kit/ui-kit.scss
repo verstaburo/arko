@@ -192,6 +192,10 @@ $ui-kit-color-darkbg: black;
 
   &__custom-text {
     &_style-1 { @include text; }
+    &_style-2 { @include text-big; }
+    &_style-3 { @include text-bigger; }
+    &_style-4 { @include text-small; }
+
 
     &:not(:last-child) { margin-bottom: 10px; }
   }

@@ -46,11 +46,6 @@
     padding: 12px 10px 32px;
     box-sizing: border-box;
 
-    @include screen('tablet') {
-      padding-left: 0;
-      padding-right: 0;
-    }
-
     &::before, &::after {
       @include pseudo;
       width: 47px;

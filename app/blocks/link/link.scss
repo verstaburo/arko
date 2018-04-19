@@ -48,6 +48,10 @@
     letter-spacing: .096em;
   }
 
+  &_noup {
+    @include link-noup;
+  }
+
   &_bordered {
     @include link-bordered;
   }
