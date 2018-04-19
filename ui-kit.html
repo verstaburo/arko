@@ -235,22 +235,6 @@
                     <section class="ui-kit__section">
                         <div class="ui-kit__section-head">
                             <div class="container">
-                                <h2>Градиенты</h2>
-                                <p>Цвета для градиентов находятся в файле styles/helpers/_variables.scss</p>
-                                <p>Сами градиенты в styles/helpers/_gradients.scss</p>
-                            </div>
-                        </div>
-                        <div class="ui-kit__section-content">
-                            <div class="container">
-                                <div class="ui-kit__elements-list">
-                                    <div class="ui-kit__color ui-kit__color_bg_dark ui-kit__color_gradient_main" style="background: undefined">gradient-main</div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="ui-kit__section">
-                        <div class="ui-kit__section-head">
-                            <div class="container">
                                 <h2>Шрифты и контентная зона</h2>
                                 <p>Основной шрифт: 'PT Sans' ($font-main), font-weight: 400</p>
                                 <p>Переменные находятся в файле styles/helpers/_variables.scss</p>
@@ -313,7 +297,10 @@
                                     </div>
                                 </div>
                                 <p class="ui-kit__description">Другие стили текстов:</p>
-                                <div class="ui-kit__custom-text ui-kit__custom-text_style-1">Пример кастомного стиля на примере стандартного (%text)</div>
+                                <div class="ui-kit__custom-text ui-kit__custom-text_style-1">Пример кастомного стиля 12px (text)</div>
+                                <div class="ui-kit__custom-text ui-kit__custom-text_style-2">Пример кастомного стиля 13px (text-big)</div>
+                                <div class="ui-kit__custom-text ui-kit__custom-text_style-3">Пример кастомного стиля 15px (text-bigger)</div>
+                                <div class="ui-kit__custom-text ui-kit__custom-text_style-4">Пример кастомного стиля 11px (text-small)</div>
                             </div>
                         </div>
                     </section>
@@ -511,34 +498,6 @@
                 <section class="ui-kit__section">
                     <div class="ui-kit__section-head">
                         <div class="container">
-                            <h2>Табы</h2>
-                            <p>Блок: blocks/tabs</p>
-                        </div>
-                    </div>
-                    <div class="ui-kit__section-content">
-                        <div class="container">
-                            <ul class="tabs">
-                                <li class="tabs__tab active" data-tab-target="tab1">Информация</li>
-                                <li class="tabs__tab" data-tab-target="tab2">Контент</li>
-                                <li class="tabs__tab" data-tab-target="tab3">Тексты</li>
-                            </ul>
-                            <div class="tabs-content">
-                                <div class="tabs-content__wrapper active" data-tab="tab1" data-tab-group="testtabs">
-                                    <p>Это таб 1</p>
-                                </div>
-                                <div class="tabs-content__wrapper" data-tab="tab2" data-tab-group="testtabs">
-                                    <p>Это таб 2</p>
-                                </div>
-                                <div class="tabs-content__wrapper" data-tab="tab3" data-tab-group="testtabs">
-                                    <p>Это таб 3</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="ui-kit__section">
-                    <div class="ui-kit__section-head">
-                        <div class="container">
                             <h2>Попапы</h2>
                             <p>Блок: blocks/popups</p>
                         </div>
@@ -549,15 +508,11 @@
                             <a class="link js-fancybox" href="#testpopup">
                                 <span class="link__text">Открыть попап</span>
                             </a>
-                            <p class="ui-kit__description">Верстка попапов:</p>
-                            <a class="link" onclick="$('.popups').toggle()">
-                                <span class="link__text">Показать попапы</span>
-                            </a>
-                            <div class="popups ui-kit__ui-popups">
+                            <div class="popups">
                                 <div class="popup" id="testpopup">
                                     <div class="popup__wrapper">
+                                        <div class="popup__title">Тестовый попап</div>
                                         <div class="content-zone">
-                                            <h2>Тестовый попап</h2>
                                             <p>С тестовым контентом</p>
                                         </div>
                                     </div>
@@ -579,6 +534,14 @@
                             <p class="ui-kit__description">.link</p>
                             <a class="link" href="#">
                                 <span class="link__text">Обычная ссылка</span>
+                            </a>
+                            <p class="ui-kit__description">.link._bordered</p>
+                            <a class="link link_bordered" href="#">
+                                <span class="link__text">Подчеркнутая ссылка</span>
+                            </a>
+                            <p class="ui-kit__description">.link._noup</p>
+                            <a class="link link_noup" href="#">
+                                <span class="link__text">Cсылка не вверхнем регистре</span>
                             </a>
                             <p class="ui-kit__description">.link._white</p>
                             <a class="link link_white" href="#">
@@ -681,7 +644,7 @@
                     </div>
                     <div class="ui-kit__section-content">
                         <div class="container">
-                            <form class="search" id="search">
+                            <form class="search">
                                 <input class="input search__input" />
                                 <button class="button search__button" type="submit">
                                     <img class="button__image" src="assets/images/loupe.png" alt="" role="presentation" />
@@ -703,68 +666,6 @@
                             <div class="ui-kit__scrolldemo js-scrollbar">
                                 <div class="ui-kit__scrolldemo-block"></div>
                             </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="ui-kit__section">
-                    <div class="ui-kit__section-head">
-                        <div class="container">
-                            <h2>Слайдер</h2>
-                            <p>Блок: blocks/slider/slider</p>
-                        </div>
-                    </div>
-                    <div class="ui-kit__section-content">
-                        <div class="container">
-                            <p class="ui-kit__description">.js-slider</p>
-                            <div class="slider swiper-container js-slider">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="slider__slide">Привет</div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="slider__slide">Привет</div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="slider__slide">Привет</div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="slider__slide">Привет</div>
-                                    </div>
-                                </div>
-                                <div class="slider__dots">
-                                    <div class="slider__dot"></div>
-                                </div>
-                                <div class="slider__button slider__button_prev"></div>
-                                <div class="slider__button slider__button_next"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="ui-kit__section">
-                    <div class="ui-kit__section-head">
-                        <div class="container">
-                            <h2>Подсказки</h2>
-                            <p>Блок: blocks/tooltip/tooltip</p>
-                        </div>
-                    </div>
-                    <div class="ui-kit__section-content">
-                        <div class="container">
-                            <p class="ui-kit__description">.js-tooltip</p>
-                            <a class="button js-tooltip" href="#" title="Пример подсказки">Пример подсказки</a>
-                        </div>
-                    </div>
-                </section>
-                <section class="ui-kit__section">
-                    <div class="ui-kit__section-head">
-                        <div class="container">
-                            <h2>Карты</h2>
-                            <p>Блок: blocks/map/map</p>
-                        </div>
-                    </div>
-                    <div class="ui-kit__section-content">
-                        <div class="container">
-                            <p class="ui-kit__description">#map</p>
-                            <div class="map" id="map"></div>
                         </div>
                     </div>
                 </section>
@@ -811,89 +712,6 @@
                                     </a>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                </section>
-                <section class="ui-kit__section">
-                    <div class="ui-kit__section-head">
-                        <div class="container">
-                            <h2>Аккордион</h2>
-                            <p>Блок: blocks/accordion/accordion</p>
-                        </div>
-                    </div>
-                    <div class="ui-kit__section-content">
-                        <div class="container">
-                            <p class="ui-kit__description">Multiple true</p>
-                            <div class="accordions" data-accordion-multiple="false">
-                                <div class="accordion is-active">
-                                    <div class="accordion__header">
-                                        <div class="accordion__button js-accordion-button">Блок #1</div>
-                                    </div>
-                                    <div class="accordion__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aliquam perferendis velit ex numquam, consequatur doloribus magnam accusantium expedita eveniet, quisquam voluptate quos maiores impedit quibusdam.
-                                        Quod sit molestias sapiente.</div>
-                                </div>
-                                <div class="accordion">
-                                    <div class="accordion__header">
-                                        <div class="accordion__button js-accordion-button">Блок #2</div>
-                                    </div>
-                                    <div class="accordion__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aliquam perferendis velit ex numquam, consequatur doloribus magnam accusantium expedita eveniet, quisquam voluptate quos maiores impedit quibusdam.
-                                        Quod sit molestias sapiente.</div>
-                                </div>
-                            </div>
-                            <p class="ui-kit__description">Multiple false</p>
-                            <div class="accordions" data-accordion-multiple="false">
-                                <div class="accordion is-active">
-                                    <div class="accordion__header">
-                                        <div class="accordion__button js-accordion-button">Блок #1</div>
-                                    </div>
-                                    <div class="accordion__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aliquam perferendis velit ex numquam, consequatur doloribus magnam accusantium expedita eveniet, quisquam voluptate quos maiores impedit quibusdam.
-                                        Quod sit molestias sapiente.</div>
-                                </div>
-                                <div class="accordion">
-                                    <div class="accordion__header">
-                                        <div class="accordion__button js-accordion-button">Блок #2</div>
-                                    </div>
-                                    <div class="accordion__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati aliquam perferendis velit ex numquam, consequatur doloribus magnam accusantium expedita eveniet, quisquam voluptate quos maiores impedit quibusdam.
-                                        Quod sit molestias sapiente.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="ui-kit__section">
-                    <div class="ui-kit__section-head">
-                        <div class="container">
-                            <h2>Dropdown</h2>
-                            <p>Блок: blocks/dropdown/dropdown</p>
-                        </div>
-                    </div>
-                    <div class="ui-kit__section-content">
-                        <div class="container">
-                            <p class="ui-kit__description">Для использования, нужно "кнопке" добавить класс .js-dropdown-toggle</p>
-                            <div style="display: inline-block; position: relative; margin-bottom: 24px;">
-                                <a class="button js-dropdown-toggle">top</a>
-                                <div class="js-dropdown dropdown dropdown_position_top">content</div>
-                            </div>
-                            <div style="display: inline-block; position: relative; margin-bottom: 24px;">
-                                <a class="button js-dropdown-toggle">bottom</a>
-                                <div class="js-dropdown dropdown">content</div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="ui-kit__section">
-                    <div class="ui-kit__section-head">
-                        <div class="container">
-                            <h2>informer</h2>
-                            <p>Блок: blocks/informer/informer</p>
-                        </div>
-                    </div>
-                    <div class="ui-kit__section-content">
-                        <div class="container">
-                            <a class="informer" href="article.html">
-                                <img class="informer__image" src="assets/images/wall1.jpg" alt="" role="presentation" />
-                                <span class="informer__title">2 АПРЕЛЯ 2018. ПРЕЗЕНТАЦИЯ АРКО</span>
-                            </a>
                         </div>
                     </div>
                 </section>
@@ -1241,37 +1059,55 @@
                 <section class="ui-kit__section">
                     <div class="ui-kit__section-head">
                         <div class="container">
-                            <h2>Перемещение блока по слотам</h2>
-                            <p>Блок: blocks/put-block-into-slot/put-block-into-slot</p>
+                            <h2>Галлерея</h2>
+                            <p>Блок: blocks/gallery/gallery</p>
                         </div>
                     </div>
                     <div class="ui-kit__section-content">
                         <div class="container">
-                            <p class="ui-kit__description">При смене брейкпоинта app/scripts/globalOptions.js блоки будут перемещены в соответствующий слот</p>
-                            <div class="grid">
-                                <div class="grid__col grid__col_xl_12">
-                                    <p style="font-size: 12px; color: #999;">+put-block-into-slot('slotId', 'xl')</p>
-                                    <div data-slot-id="slotId" data-slot-res="xl">
-                                        <div data-target-slot="slotId">
-                                            <div style="width: 100%; padding: 15px; margin-top: 15px; border: 1px black dashed; text-align: center;">Этот блок будет перемещаться в зависимости от брейпоинта</div>
+                            <div class="gallery ui-kit__portfolio">
+                                <div class="gallery__title">ШОУРИЛ</div>
+                                <div class="grid grid_mid">
+                                    <div class="grid__col grid__col_xs_12 grid__col_xl_6 gallery__item">
+                                        <a class="media js-fancybox gallery__media" href="https://www.youtube.com/watch?v=Ietf_2u18Yo">
+                                            <img class="media__image" src="assets/images/poster-1.jpg" alt="" role="presentation" />
+                                        </a>
+                                        <div class="gallery__describe">
+                                            <div class="gallery__name">Showreel 2018</div>
+                                            <ul class="link-list gallery__edit">
+                                                <li class="link-list__item">
+                                                    <a class="link link_gray link_bordered link_noup js-fancybox" href="#popup-add-video">
+                                                        <span class="link__text">редактировать</span>
+                                                    </a>
+                                                </li>
+                                                <li class="link-list__item">
+                                                    <a class="link link_gray link_bordered link_noup js-remove-item" href="#">
+                                                        <span class="link__text">удалить</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="grid__col grid__col_xl_3">
-                                    <p style="font-size: 12px; color: #999;">+put-block-into-slot('slotId', 'lg')</p>
-                                    <div data-slot-id="slotId" data-slot-res="lg"></div>
-                                </div>
-                                <div class="grid__col grid__col_xl_3">
-                                    <p style="font-size: 12px; color: #999;">+put-block-into-slot('slotId', 'md')</p>
-                                    <div data-slot-id="slotId" data-slot-res="md"></div>
-                                </div>
-                                <div class="grid__col grid__col_xl_3">
-                                    <p style="font-size: 12px; color: #999;">+put-block-into-slot('slotId', 'sm')</p>
-                                    <div data-slot-id="slotId" data-slot-res="sm"></div>
-                                </div>
-                                <div class="grid__col grid__col_xl_3">
-                                    <p style="font-size: 12px; color: #999;">+put-block-into-slot('slotId', 'xs')</p>
-                                    <div data-slot-id="slotId" data-slot-res="xs"></div>
+                                    <div class="grid__col grid__col_xs_12 grid__col_xl_6 gallery__item">
+                                        <a class="media js-fancybox gallery__media" href="https://vimeo.com/57785714">
+                                            <img class="media__image" src="assets/images/poster-2.jpg" alt="" role="presentation" />
+                                        </a>
+                                        <div class="gallery__describe">
+                                            <div class="gallery__name">Showreel 2015</div>
+                                            <ul class="link-list gallery__edit">
+                                                <li class="link-list__item">
+                                                    <a class="link link_gray link_bordered link_noup js-fancybox" href="#popup-add-video">
+                                                        <span class="link__text">редактировать</span>
+                                                    </a>
+                                                </li>
+                                                <li class="link-list__item">
+                                                    <a class="link link_gray link_bordered link_noup js-remove-item" href="#">
+                                                        <span class="link__text">удалить</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1365,7 +1201,7 @@
                     </div>
                     <div class="form__row">
                         <div class="form__text">Нажимая кнопку «Отправить», я принимаю
-                            <a href="#">пользовательское соглашение</a>
+                            <a href="agreement.html" target="_blank">пользовательское соглашение</a>
                         </div>
                     </div>
                     <div class="form__row form__row_button">
@@ -1375,6 +1211,7 @@
             </div>
         </div>
     </div>
+    <!-- https://selectize.github.io/selectize.js/-->
     <script src="assets/scripts/libs/selectize.min.js"></script>
     <script src="assets/scripts/app.min.js"></script>
     <script src="assets/scripts/main.js"></script>
