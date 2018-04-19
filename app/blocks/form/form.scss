@@ -136,6 +136,12 @@
       }
     }
 
+    &_short {
+      @include screen('tablet') {
+        max-width: 100px;
+      }
+    }
+
     &_dhide {
       @include screen('tablet') {
         display: none;
