@@ -2,4 +2,8 @@ mixin footer(noborder)
   -var addClass = (noborder) ? '' : '_noborder'
   +b(class="footer" + addClass)&attributes(attributes)
     .container
-      +link(href="tel:88009696523").__phone 8&nbsp;800&nbsp;969-65-23
+      +link-list._vertical
+        +e.LI.item
+          +link(href="tel:88009696523") 8&nbsp;800&nbsp;969-65-23
+        +e.LI.item
+          +link(href="mailto:info@arko.team") info@arko.team
