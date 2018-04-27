@@ -5,7 +5,9 @@ mixin header()
         +e.col_left
           +logo(href="index.html")
         +e.col_right
-          +button('a').__lk(href="lk.html") ЛИЧНЫЙ КАБИНЕТ
+          +e.login
+            +button('a').__lk(href="lk.html") ЛИЧНЫЙ КАБИНЕТ
+            +button('a').__lk_small(href="#") ВЫХОД
           +link-list
             +e.LI.item
               +link._ls.js-fancybox(href="#popup-login") ВХОД

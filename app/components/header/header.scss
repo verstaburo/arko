@@ -43,13 +43,34 @@
     padding: 4px 5px;
     width: 134px;
     margin-top: 4px;
+    margin-left: 3px;
+
+    &_small {
+      @include screen('phone-wide') {
+        width: 65px;
+      }
+    }
   }
 
   &.is-authorized {
 
+    .search {
+      @include screen('phone-wide') {
+        width: 202px;
+      }
+    }
+
     .header {
+      &__login {
+        display: block;
+      }
+
       &__lk {
-        display: inline-block;
+        display: block;
+
+        @include screen('phone-wide') {
+          display: inline-block;
+        }
       }
 
       &__top {
