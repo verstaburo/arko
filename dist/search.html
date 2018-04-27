@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>АРКО - Результат поиска</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="favicon.ico" rel="shortcut icon">
+    <link href="assets/styles/app.min.css" rel="stylesheet">
+    <script src="assets/scripts/libs/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="header__col header__col_left">
+                    <a class="logo" href="index.html">
+                        <img class="logo__image" src="assets/images/logo.svg" alt="" role="presentation" />
+                        <span class="logo__text">ПРОФЕССИОНАЛЬНЫЕ КИНООПЕРАТОРЫ РОССИИ</span>
+                    </a>
+                </div>
+                <div class="header__col header__col_right">
+                    <div class="header__login">
+                        <a class="button header__lk" href="lk.html">ЛИЧНЫЙ КАБИНЕТ</a>
+                        <a class="button header__lk header__lk_small" href="#">ВЫХОД</a>
+                    </div>
+                    <ul class="link-list">
+                        <li class="link-list__item">
+                            <a class="link link_ls js-fancybox" href="#popup-login">
+                                <span class="link__text">ВХОД</span>
+                            </a>
+                        </li>
+                        <li class="link-list__item">
+                            <a class="link link_ls link_gray js-fancybox" href="#popup-registration">
+                                <span class="link__text">РЕГИСТРАЦИЯ</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="search" id="search">
+                        <input class="input search__input" />
+                        <button class="button search__button" type="submit">
+                            <img class="button__image" src="assets/images/loupe.png" alt="" role="presentation" />
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <nav class="header__navigation">
+                <ul class="link-list link-list_big-margin">
+                    <li class="link-list__item">
+                        <a class="link link_white" href="news.html">
+                            <span class="link__text">НОВОСТИ И СОБЫТИЯ</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_white" href="catalog.html">
+                            <span class="link__text">ОПЕРАТОРЫ</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_white" href="about.html">
+                            <span class="link__text">ОБ АРКО</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <main class="page" role="main">
+        <div class="container">
+            <div class="page__content search-result">
+                <h1 class="page__title">Найдено X результатов</h1>
+                <ul class="link-list link-list_vertical search-result__list">
+                    <li class="link-list__item">
+                        <a class="link link_white" href="#">
+                            <span class="link__text">Результат 1</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_white" href="#">
+                            <span class="link__text">Результат 2</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_white" href="#">
+                            <span class="link__text">Результат 3</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_white" href="#">
+                            <span class="link__text">Результат 4</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_white" href="#">
+                            <span class="link__text">Результат 5</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_white" href="#">
+                            <span class="link__text">Результат 6</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="link-list filter filter_pagination search-result__pagination">
+                    <li class="link-list__item active">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">1</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">2</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">3</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">4</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">5</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">6</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <aside class="page__aside">
+                <div class="js-scrollbar">
+                    <a class="short-news" href="article.html">
+                        <time class="short-news__time">01 Марта 2018</time>
+                        <span class="short-news__text">Заур Болотаев номинирован на премию ОСКАР Американской Киноакадемии.</span>
+                    </a>
+                    <a class="short-news" href="article.html">
+                        <time class="short-news__time">30 Февраля 2018</time>
+                        <span class="short-news__text">Александр Симонов будет снимать новый фильм Кончаловского на пятьсот мобильных телефонов Nokia.</span>
+                    </a>
+                    <a class="short-news" href="article.html">
+                        <time class="short-news__time">1 Января 2018</time>
+                        <span class="short-news__text">Кинематографисты Москвы отпраздновали наступление Нового года сожжением киностудии имени Горького.</span>
+                    </a>
+                    <a class="short-news" href="article.html">
+                        <time class="short-news__time">30 декабря 2017</time>
+                        <span class="short-news__text">Организаторы 71-го международного Каннского кинофестиваля анонсировали два важных нововведения. Во-первых, звездам отныне запрещено делать селфи во&nbsp;время прохода по&nbsp;всевозможным &laquo;красным дорожкам&raquo;, а, во-вторых,
+                            отменены специальные показы фильмов для прессы, которые проходили раньше официальных премьер.</span>
+                    </a>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <div class="footer">
+        <div class="container">
+            <ul class="link-list link-list_vertical">
+                <li class="link-list__item">
+                    <a class="link" href="tel:88009696523">
+                        <span class="link__text">8&nbsp;800&nbsp;969-65-23</span>
+                    </a>
+                </li>
+                <li class="link-list__item">
+                    <a class="link link_small" href="mailto:info@arko.team">
+                        <span class="link__text">info@arko.team</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="popups">
+        <div class="popup popup-login" id="popup-login">
+            <div class="popup__wrapper">
+                <form class="form form_left" id="form-login">
+                    <div class="form__row form__row_title">
+                        <div class="popup__title">Вход</div>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__wrapper">
+                            <span class="form__label">e-mail:</span>
+                            <input class="input form__input" type="text" name="email" required="required" data-type="email" />
+                            <span class="form__error"></span>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__wrapper">
+                            <span class="form__label">пароль:</span>
+                            <input class="input form__input" type="password" name="password" required="required" />
+                            <span class="form__error"></span>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <button class="button js-verify" type="submit">Войти</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="popup popup-registration" id="popup-registration">
+            <div class="popup__wrapper">
+                <form class="form form_left" id="form-registration">
+                    <div class="form__row form__row_title">
+                        <div class="popup__title">РЕГИСТРАЦИЯ ПОЛЬЗОВАТЕЛЯ</div>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__wrapper">
+                            <span class="form__label">e-mail:</span>
+                            <input class="input form__input" type="text" name="email" required="required" data-type="email" />
+                            <span class="form__error"></span>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__wrapper">
+                            <span class="form__label">пароль:</span>
+                            <input class="input form__input" type="password" name="password" required="required" />
+                            <span class="form__error"></span>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__wrapper">
+                            <span class="form__label">имя и фамилия:</span>
+                            <input class="input form__input" type="text" name="name" required="required" />
+                            <span class="form__error"></span>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__wrapper">
+                            <span class="form__label">телефон:</span>
+                            <input class="input form__input" type="tel" name="phone" required="required" data-type="tel" />
+                            <span class="form__error"></span>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__text">Нажимая кнопку «Отправить», я принимаю
+                            <a href="agreement.html" target="_blank">пользовательское соглашение</a>
+                        </div>
+                    </div>
+                    <div class="form__row form__row_button">
+                        <button class="button js-verify" type="submit">ОТПРАВИТЬ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- https://selectize.github.io/selectize.js/-->
+    <script src="assets/scripts/libs/selectize.min.js"></script>
+    <script src="assets/scripts/app.min.js"></script>
+    <script src="assets/scripts/main.js"></script>
+</body>
+
+</html>

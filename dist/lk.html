@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>АРКО - Личный кабинет</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="favicon.ico" rel="shortcut icon">
+    <link href="assets/styles/app.min.css" rel="stylesheet">
+    <script src="assets/scripts/libs/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="header is-authorized">
+        <div class="container">
+            <div class="header__top">
+                <div class="header__col header__col_left">
+                    <a class="logo" href="index.html">
+                        <img class="logo__image" src="assets/images/logo.svg" alt="" role="presentation" />
+                        <span class="logo__text">ПРОФЕССИОНАЛЬНЫЕ КИНООПЕРАТОРЫ РОССИИ</span>
+                    </a>
+                </div>
+                <div class="header__col header__col_right">
+                    <div class="header__login">
+                        <a class="button header__lk" href="lk.html">ЛИЧНЫЙ КАБИНЕТ</a>
+                        <a class="button header__lk header__lk_small" href="#">ВЫХОД</a>
+                    </div>
+                    <ul class="link-list">
+                        <li class="link-list__item">
+                            <a class="link link_ls js-fancybox" href="#popup-login">
+                                <span class="link__text">ВХОД</span>
+                            </a>
+                        </li>
+                        <li class="link-list__item">
+                            <a class="link link_ls link_gray js-fancybox" href="#popup-registration">
+                                <span class="link__text">РЕГИСТРАЦИЯ</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="search" id="search">
+                        <input class="input search__input" />
+                        <button class="button search__button" type="submit">
+                            <img class="button__image" src="assets/images/loupe.png" alt="" role="presentation" />
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <nav class="header__navigation">
+                <ul class="link-list link-list_big-margin">
+                    <li class="link-list__item">
+                        <a class="link link_white" href="news.html">
+                            <span class="link__text">НОВОСТИ И СОБЫТИЯ</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_white" href="catalog.html">
+                            <span class="link__text">ОПЕРАТОРЫ</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_white" href="about.html">
+                            <span class="link__text">ОБ АРКО</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <main class="page" role="main">
+        <div class="container">
+            <div class="page__content page__content_pad40 member">
+                <ul class="link-list filter member__filter">
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">А</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">Б</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">В</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">Г</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">Д</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">Е</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">Ё</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">Ж</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">З</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">И</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">К</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">Л</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">М</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">Н</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">О</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">П</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">Р</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">С</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">Т</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">У</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">Ф</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">Х</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">Ц</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">Ч</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">Ш</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">Щ</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">Э</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">Ю</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">Я</span>
+                        </a>
+                    </li>
+                    <li class="link-list__item active">
+                        <a class="link link_gray2" href="#">
+                            <span class="link__text">А-Я</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="user-info member__info">
+                    <div class="user-info__col user-info__col_left">
+                        <div class="avatar user-info__avatar">
+                            <img class="avatar__image" src="assets/images/avatar-4.jpg" alt="" role="presentation" />
+                        </div>
+                    </div>
+                    <div class="user-info__col user-info__col_right">
+                        <div class="user-info__title">Игорь Гринякин. Москва.</div>
+                        <div class="user-info__subtitle">24 февраля 1981г. 37 лет.</div>
+                        <a class="button user-info__button js-fancybox" href="#popup-edit-data">ИЗМЕНИТЬ ДАННЫЕ</a>
+                        <ul class="user-info__awards js-scrollbar">
+                            <li>Премиия «Золотой Орел» 2017: лучший оператор (Викинг)</li>
+                            <li>Премия ТЭФИ 2009 - лучший оператор телевизиооного фильма</li>
+                            <li>Премиия «Золотой Орел» 2008: лучший оператор (Адмирал)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gallery member__portfolio">
+                    <div class="gallery__title">ШОУРИЛ</div>
+                    <div class="grid grid_mid">
+                        <div class="grid__col grid__col_xs_12 grid__col_xl_6 gallery__item">
+                            <a class="media js-fancybox gallery__media" href="https://www.youtube.com/watch?v=Ietf_2u18Yo">
+                                <img class="media__image" src="assets/images/poster-1.jpg" alt="" role="presentation" />
+                            </a>
+                            <div class="gallery__describe">
+                                <div class="gallery__name">Showreel 2018</div>
+                                <ul class="link-list gallery__edit">
+                                    <li class="link-list__item">
+                                        <a class="link link_gray link_bordered link_noup js-fancybox" href="#popup-add-video">
+                                            <span class="link__text">редактировать</span>
+                                        </a>
+                                    </li>
+                                    <li class="link-list__item">
+                                        <a class="link link_gray link_bordered link_noup js-remove-item" href="#">
+                                            <span class="link__text">удалить</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="grid__col grid__col_xs_12 grid__col_xl_6 gallery__item">
+                            <a class="media js-fancybox gallery__media" href="https://vimeo.com/57785714">
+                                <img class="media__image" src="assets/images/poster-2.jpg" alt="" role="presentation" />
+                            </a>
+                            <div class="gallery__describe">
+                                <div class="gallery__name">Showreel 2015</div>
+                                <ul class="link-list gallery__edit">
+                                    <li class="link-list__item">
+                                        <a class="link link_gray link_bordered link_noup js-fancybox" href="#popup-add-video">
+                                            <span class="link__text">редактировать</span>
+                                        </a>
+                                    </li>
+                                    <li class="link-list__item">
+                                        <a class="link link_gray link_bordered link_noup js-remove-item" href="#">
+                                            <span class="link__text">удалить</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery member__portfolio">
+                    <div class="gallery__title">РЕКЛАМНЫЕ РОЛИКИ</div>
+                    <div class="grid grid_mid">
+                        <div class="grid__col grid__col_xs_12 grid__col_xl_6 gallery__item">
+                            <a class="media js-fancybox gallery__media" href="assets/video/sample.mp4">
+                                <img class="media__image" src="assets/images/poster-3.jpg" alt="" role="presentation" />
+                            </a>
+                            <div class="gallery__describe">
+                                <div class="gallery__name">Печеньки ништяк</div>
+                                <ul class="link-list gallery__edit">
+                                    <li class="link-list__item">
+                                        <a class="link link_gray link_bordered link_noup js-fancybox" href="#popup-add-video">
+                                            <span class="link__text">редактировать</span>
+                                        </a>
+                                    </li>
+                                    <li class="link-list__item">
+                                        <a class="link link_gray link_bordered link_noup js-remove-item" href="#">
+                                            <span class="link__text">удалить</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="grid__col grid__col_xs_12 grid__col_xl_6 gallery__item">
+                            <a class="media js-fancybox gallery__media" href="assets/video/sample.mp4">
+                                <img class="media__image" src="assets/images/poster-3.jpg" alt="" role="presentation" />
+                            </a>
+                            <div class="gallery__describe">
+                                <div class="gallery__name">Печеньки ништяк</div>
+                                <ul class="link-list gallery__edit">
+                                    <li class="link-list__item">
+                                        <a class="link link_gray link_bordered link_noup js-fancybox" href="#popup-add-video">
+                                            <span class="link__text">редактировать</span>
+                                        </a>
+                                    </li>
+                                    <li class="link-list__item">
+                                        <a class="link link_gray link_bordered link_noup js-remove-item" href="#">
+                                            <span class="link__text">удалить</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside class="page__aside">
+                <div class="js-scrollbar">
+                    <a class="short-news" href="article.html">
+                        <time class="short-news__time">01 Марта 2018</time>
+                        <span class="short-news__text">Заур Болотаев номинирован на премию ОСКАР Американской Киноакадемии.</span>
+                    </a>
+                    <a class="short-news" href="article.html">
+                        <time class="short-news__time">30 Февраля 2018</time>
+                        <span class="short-news__text">Александр Симонов будет снимать новый фильм Кончаловского на пятьсот мобильных телефонов Nokia.</span>
+                    </a>
+                    <a class="short-news" href="article.html">
+                        <time class="short-news__time">1 Января 2018</time>
+                        <span class="short-news__text">Кинематографисты Москвы отпраздновали наступление Нового года сожжением киностудии имени Горького.</span>
+                    </a>
+                    <a class="short-news" href="article.html">
+                        <time class="short-news__time">30 декабря 2017</time>
+                        <span class="short-news__text">Организаторы 71-го международного Каннского кинофестиваля анонсировали два важных нововведения. Во-первых, звездам отныне запрещено делать селфи во&nbsp;время прохода по&nbsp;всевозможным &laquo;красным дорожкам&raquo;, а, во-вторых,
+                            отменены специальные показы фильмов для прессы, которые проходили раньше официальных премьер.</span>
+                    </a>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <div class="footer footer_noborder">
+        <div class="container">
+            <ul class="link-list link-list_vertical">
+                <li class="link-list__item">
+                    <a class="link" href="tel:88009696523">
+                        <span class="link__text">8&nbsp;800&nbsp;969-65-23</span>
+                    </a>
+                </li>
+                <li class="link-list__item">
+                    <a class="link link_small" href="mailto:info@arko.team">
+                        <span class="link__text">info@arko.team</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="popups">
+        <div class="popup popup-login" id="popup-login">
+            <div class="popup__wrapper">
+                <form class="form form_left" id="form-login">
+                    <div class="form__row form__row_title">
+                        <div class="popup__title">Вход</div>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__wrapper">
+                            <span class="form__label">e-mail:</span>
+                            <input class="input form__input" type="text" name="email" required="required" data-type="email" />
+                            <span class="form__error"></span>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__wrapper">
+                            <span class="form__label">пароль:</span>
+                            <input class="input form__input" type="password" name="password" required="required" />
+                            <span class="form__error"></span>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <button class="button js-verify" type="submit">Войти</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="popup popup-registration" id="popup-registration">
+            <div class="popup__wrapper">
+                <form class="form form_left" id="form-registration">
+                    <div class="form__row form__row_title">
+                        <div class="popup__title">РЕГИСТРАЦИЯ ПОЛЬЗОВАТЕЛЯ</div>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__wrapper">
+                            <span class="form__label">e-mail:</span>
+                            <input class="input form__input" type="text" name="email" required="required" data-type="email" />
+                            <span class="form__error"></span>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__wrapper">
+                            <span class="form__label">пароль:</span>
+                            <input class="input form__input" type="password" name="password" required="required" />
+                            <span class="form__error"></span>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__wrapper">
+                            <span class="form__label">имя и фамилия:</span>
+                            <input class="input form__input" type="text" name="name" required="required" />
+                            <span class="form__error"></span>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__wrapper">
+                            <span class="form__label">телефон:</span>
+                            <input class="input form__input" type="tel" name="phone" required="required" data-type="tel" />
+                            <span class="form__error"></span>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__text">Нажимая кнопку «Отправить», я принимаю
+                            <a href="agreement.html" target="_blank">пользовательское соглашение</a>
+                        </div>
+                    </div>
+                    <div class="form__row form__row_button">
+                        <button class="button js-verify" type="submit">ОТПРАВИТЬ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="popup popup-edit-data" id="popup-edit-data">
+            <div class="popup__wrapper">
+                <form class="form form_left" id="form-edit-data">
+                    <div class="form__row form__row_title">
+                        <div class="popup__title">ИЗМЕНЕНИЕ ДАННЫХ</div>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__wrapper">
+                            <span class="form__label">e-mail:</span>
+                            <input class="input form__input" type="text" name="email" required="required" data-type="email" />
+                            <span class="form__error"></span>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__wrapper">
+                            <span class="form__label">имя и фамилия:</span>
+                            <input class="input form__input" type="text" name="name" required="required" />
+                            <span class="form__error"></span>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__wrapper">
+                            <span class="form__label">телефон:</span>
+                            <input class="input form__input" type="tel" name="phone" required="required" data-type="tel" />
+                            <span class="form__error"></span>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__wrapper">
+                            <span class="form__label">дата рождения:</span>
+                            <input class="input js-datepicker form__input" type="text" name="date" readonly="readonly" required="required" />
+                            <span class="form__error"></span>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__wrapper">
+                            <span class="form__label">фильмография:</span>
+                            <textarea class="textarea textarea_big form__textarea" name="filmography" required="required"></textarea>
+                            <span class="form__error"></span>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__wrapper">
+                            <span class="form__label">призы и награды:</span>
+                            <textarea class="textarea textarea_big form__textarea" name="awards" required="required"></textarea>
+                            <span class="form__error"></span>
+                        </label>
+                    </div>
+                    <div class="form__row form__row_smg">
+                        <label class="upload upload_button">
+                            <input type="file" name="file" />
+                            <span class="upload__text">ИЗМЕНИТЬ ФОТО</span>
+                        </label>
+                    </div>
+                    <div class="form__row form__row_button">
+                        <button class="button js-verify" type="submit">СОХРАНИТЬ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="popup popup-add-video" id="popup-add-video">
+            <div class="popup__wrapper">
+                <div class="popup__title">ДОБАВЛЕНИЕ ВИДЕО</div>
+                <form class="form" id="form-add-video">
+                    <div class="form__row form__row_smg">
+                        <div class="form__wrapper form__wrapper_small form__wrapper_mhide"></div>
+                        <label class="form__wrapper">
+                            <span class="form__label">добавить видео по ссылке:</span>
+                            <input class="input form__input" type="url" name="video-link" />
+                            <span class="form__error"></span>
+                        </label>
+                        <div class="form__wrapper form__wrapper_small">
+                            <div class="form__label form__label_up">категория:</div>
+                            <select class="select js-select" name="category-v1">
+                                <option value="шоурил" selected="selected">шоурил</option>
+                                <option value="рекламные ролики">рекламные ролики</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form__row form__row_smg">
+                        <label class="form__wrapper">
+                            <span class="form__label">название:</span>
+                            <input class="input form__input" type="text" name="video-title1" />
+                            <span class="form__error"></span>
+                        </label>
+                    </div>
+                    <div class="form__row form__row_smg">
+                        <div class="form__wrapper form__wrapper_small form__wrapper_mhide"></div>
+                        <div class="form__wrapper">
+                            <div class="form__label">загрузить видео:</div>
+                            <label class="upload form__upload">
+                                <input type="file" name="file" />
+                                <span class="upload__text">выбрать файл</span>
+                            </label>
+                        </div>
+                        <div class="form__wrapper form__wrapper_small">
+                            <div class="form__label form__label_up form__label_dhide">категория:</div>
+                            <select class="select js-select" name="category-v2">
+                                <option value="шоурил" selected="selected">шоурил</option>
+                                <option value="рекламные ролики">рекламные ролики</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form__row form__row_smg">
+                        <label class="form__wrapper">
+                            <span class="form__label">название:</span>
+                            <input class="input form__input" type="text" name="video-title2" />
+                            <span class="form__error"></span>
+                        </label>
+                    </div>
+                    <div class="form__row form__row_bmg">
+                        <button class="button" type="submit">ОТПРАВИТЬ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- https://selectize.github.io/selectize.js/-->
+    <script src="assets/scripts/libs/selectize.min.js"></script>
+    <script src="assets/scripts/app.min.js"></script>
+    <script src="assets/scripts/main.js"></script>
+</body>
+
+</html>
